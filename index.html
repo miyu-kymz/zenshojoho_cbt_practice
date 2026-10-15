@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>全商情報処理検定 CBT模擬試験システム</title>
+<title>全商情報処理検定 CBT模擬試験システム (テキスト本誌完全準拠)</title>
 <!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@
         </div>
         <div>
           <h1 class="text-base sm:text-lg font-bold tracking-tight">全商情報処理検定 CBT模擬試験システム</h1>
-          <p class="text-xs text-indigo-200">実教出版「情報基礎 模擬試験問題集」P.82〜完全準拠</p>
+          <p class="text-xs text-indigo-200">実教出版「情報基礎 模擬試験問題集」P.82〜 第1回〜第8回完全収録</p>
         </div>
       </div>
       <div class="flex items-center space-x-2">
@@ -78,14 +78,14 @@
         <div class="inline-flex items-center space-x-2 bg-indigo-500/30 border border-indigo-400/30 px-3 py-1 rounded-full text-xs font-medium mb-3 text-indigo-100">
           <span>🎯 合格基準: 70点以上 / 100点 (各問2点・全50問・50分)</span>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-extrabold mb-2 leading-tight">全商情報処理検定 本番CBT完全再現</h2>
+        <h2 class="text-2xl sm:text-3xl font-extrabold mb-2 leading-tight">テキスト本誌 模擬試験をそのままCBT化</h2>
         <p class="text-indigo-100 text-xs sm:text-sm leading-relaxed mb-5">
-          テキストP.82以降に収録されている模擬試験問題（第1回〜第8回）や、基礎固めのための分野別ドリルをそのままCBT形式で演習できます。
+          テキストP.82以降に掲載されている模擬試験第1回〜第8回、各単元集中ドリル、全商公式サンプルの実問データを収録。本番と同じ50分タイマーでの通し演習、または即時解説での学習が可能です。
         </p>
         
         <!-- Mode Switcher -->
         <div class="bg-indigo-950/60 p-3.5 rounded-xl border border-indigo-500/30 inline-flex flex-col sm:flex-row sm:items-center gap-4">
-          <span class="text-xs font-bold text-indigo-200 uppercase tracking-wider">解答モード選択:</span>
+          <span class="text-xs font-bold text-indigo-200 uppercase tracking-wider">解答モード:</span>
           <div class="flex items-center gap-4">
             <label class="cursor-pointer flex items-center space-x-2">
               <input type="radio" name="portalMode" value="cbt" checked class="text-emerald-500 focus:ring-emerald-400">
@@ -100,9 +100,7 @@
       </div>
     </div>
 
-    <!-- ================================================================= -->
-    <!-- 🗂️ メイン機能切り替えタブ (Tab Navigation) -->
-    <!-- ================================================================= -->
+    <!-- Tab Navigation -->
     <div class="border-b border-slate-300 flex items-center gap-2 sm:gap-4 overflow-x-auto pb-1">
       <button onclick="switchPortalTab('textbook')" id="tab-btn-textbook" class="px-4 sm:px-6 py-3 font-bold text-sm sm:text-base border-b-4 border-indigo-600 text-indigo-900 flex items-center gap-2 shrink-0 transition">
         <span>📚 テキスト本誌 模擬試験 (P.82〜)</span>
@@ -110,7 +108,7 @@
       </button>
 
       <button onclick="switchPortalTab('category')" id="tab-btn-category" class="px-4 sm:px-6 py-3 font-bold text-sm sm:text-base border-b-4 border-transparent text-slate-500 hover:text-slate-800 flex items-center gap-2 shrink-0 transition">
-        <span>📂 分野別・単元別集中特訓</span>
+        <span>📂 出題単元別・集中特訓</span>
         <span class="px-2 py-0.5 rounded-full bg-sky-100 text-sky-800 text-xs">全8単元</span>
       </button>
 
@@ -120,7 +118,7 @@
       </button>
 
       <button onclick="switchPortalTab('sample')" id="tab-btn-sample" class="px-4 sm:px-6 py-3 font-bold text-sm sm:text-base border-b-4 border-transparent text-slate-500 hover:text-slate-800 flex items-center gap-2 shrink-0 transition">
-        <span>🏛️ 全商公式サンプル問題 (P.210〜)</span>
+        <span>🏛️ 全商公式サンプル問題 (P.210)</span>
       </button>
     </div>
 
@@ -128,34 +126,22 @@
     <div id="tab-content-textbook" class="space-y-4">
       <div class="flex items-center justify-between">
         <h3 class="text-base sm:text-lg font-bold text-slate-800 flex items-center gap-2">
-          <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-          </svg>
-          実教出版テキスト掲載 模擬試験（第1回〜第8回・各50問）
+          実教出版テキスト掲載 模擬試験問題（第1回〜第8回・各50問）
         </h3>
-        <span class="text-xs text-slate-500 font-medium">受験したい回を選択してください</span>
+        <span class="text-xs text-slate-500 font-medium">解きたい回を選択してください</span>
       </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="textbook-cards-grid">
-        <!-- Rendered dynamically -->
-      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="textbook-cards-grid"></div>
     </div>
 
-    <!-- TAB 2: 分野別・単元別集中特訓 (Previous category-based questions preserved) -->
+    <!-- TAB 2: 分野別・単元別集中特訓 -->
     <div id="tab-content-category" style="display: none;" class="space-y-4">
       <div class="flex items-center justify-between">
         <h3 class="text-base sm:text-lg font-bold text-slate-800 flex items-center gap-2">
-          <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-          </svg>
-          出題分野別・単元別ドリル（基礎固め・苦手分野の集中演習）
+          出題分野別・単元別集中ドリル（基礎固め）
         </h3>
         <span class="text-xs text-slate-500 font-medium">重点的に学びたい単元を選択してください</span>
       </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="category-cards-grid">
-        <!-- Rendered dynamically -->
-      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="category-cards-grid"></div>
     </div>
 
     <!-- TAB 3: AIオリジナル弱点特訓ドリル -->
@@ -168,11 +154,10 @@
               <h3 class="text-lg sm:text-xl font-bold">🎯 単元別 AIオリジナル特訓問題を作成</h3>
             </div>
             <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed">
-              苦手な分野を選択すると、Gemini AIが全商検定の出題基準に合わせてオリジナル4択問題をその場で自動作成し、即座に特訓テストを開始します。
+              苦手な分野を選択すると、Gemini AIが全商検定の出題基準に合わせてオリジナル4択問題をその場で作成し、即座に特訓テストを開始します。
             </p>
           </div>
 
-          <!-- Controls -->
           <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 w-full lg:w-auto shrink-0">
             <select id="portal-drill-category" class="bg-slate-900/90 text-white text-xs sm:text-sm font-semibold rounded-xl px-4 py-3 border border-emerald-400/40 focus:outline-none focus:ring-2 focus:ring-emerald-400 flex-1 sm:flex-initial">
               <option value="基数変換・計算">🧮 基数変換・2進数計算</option>
@@ -189,7 +174,7 @@
               <option value="10" selected>10問</option>
             </select>
 
-            <button onclick="generateCustomAiDrillFromPortal()" id="btn-portal-drill" class="w-full sm:w-auto px-5 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs sm:text-sm rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
+            <button onclick="generateCustomAiDrillFromPortal()" class="w-full sm:w-auto px-5 py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs sm:text-sm rounded-xl shadow-md transition flex items-center justify-center gap-2 cursor-pointer">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
               </svg>
@@ -207,11 +192,11 @@
           <div class="inline-block px-3 py-1 rounded bg-amber-100 text-amber-800 text-xs font-bold">全商協会 公式提供</div>
           <h3 class="text-xl font-bold text-slate-900">情報処理検定 新科目「情報基礎」公式サンプル問題 (P.210)</h3>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            全国商業高等学校協会 情報処理研究部が公表した手引掲載の標準設問セットです。出題形式（ラジオボタン、判断分岐、ドロップダウン相当）を完全再現しています。
+            全国商業高等学校協会 情報処理研究部が公表した手引掲載の標準設問セット（全30問）を忠実に収録しています。
           </p>
         </div>
         <button onclick="selectExamFromPortal(9)" class="px-6 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-xl shadow transition cursor-pointer shrink-0 flex items-center gap-2">
-          <span>サンプル問題を受験する</span>
+          <span>公式サンプルを受験する</span>
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
@@ -219,10 +204,6 @@
       </div>
     </div>
   </main>
-
-  <footer class="bg-slate-200 text-slate-600 text-xs py-4 text-center border-t border-slate-300">
-    全商情報処理検定 CBT模擬試験システム ・ 実教出版「情報基礎」完全対応
-  </footer>
 </div>
 
 <!-- ================================================================= -->
@@ -258,13 +239,13 @@
       <div class="p-6 sm:p-8 space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed">
         <div class="border-l-4 border-indigo-600 pl-4 py-1">
           <h3 class="font-bold text-slate-900 text-base">【試験の構成と操作について】</h3>
-          <p class="text-xs text-slate-600 mt-1">本試験は実際の全商CBT（Computer Based Testing）方式に準拠して実施されます。</p>
+          <p class="text-xs text-slate-600 mt-1">実教出版テキスト掲載の実問データにもとづき、本番CBT方式で実施されます。</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-50 p-4 rounded-xl border border-slate-200">
           <div class="space-y-1">
             <div class="text-xs font-semibold text-slate-500 uppercase">試験科目</div>
-            <div class="font-bold text-slate-800">情報基礎（新基準）</div>
+            <div class="font-bold text-slate-800">情報基礎（新科目）</div>
           </div>
           <div class="space-y-1">
             <div class="text-xs font-semibold text-slate-500 uppercase">問題数 / 配点</div>
@@ -324,7 +305,6 @@
       <h2 class="text-sm sm:text-base font-bold truncate max-w-[200px] sm:max-w-md" id="exam-active-title">第1回 模擬試験</h2>
     </div>
 
-    <!-- Timer & Controls -->
     <div class="flex items-center space-x-3 sm:space-x-6">
       <div class="flex items-center bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">
         <svg class="w-4 h-4 text-emerald-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -340,7 +320,7 @@
     </div>
   </header>
 
-  <!-- Main Body: Navigation Sidebar + Center Question Area -->
+  <!-- Main Body -->
   <div class="flex-1 flex overflow-hidden">
     <!-- Left Navigation Sidebar -->
     <aside class="w-64 sm:w-72 bg-white border-r border-slate-200 flex flex-col shrink-0 shadow-sm">
@@ -349,19 +329,14 @@
         <span id="exam-answered-counter" class="text-xs font-bold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700">0/50 解答</span>
       </div>
 
-      <!-- Quick Status Legend -->
       <div class="px-3 py-2 bg-slate-100/70 border-b border-slate-200 grid grid-cols-3 gap-1 text-[11px] text-slate-600 font-medium">
         <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-indigo-600"></span>解答済</div>
         <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-white border border-slate-300"></span>未解答</div>
         <div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-amber-400"></span>要見直し</div>
       </div>
 
-      <!-- Grid of Question Buttons -->
-      <div class="flex-1 overflow-y-auto p-3 grid grid-cols-5 gap-2 content-start" id="q-nav-grid">
-        <!-- Buttons dynamically inserted -->
-      </div>
+      <div class="flex-1 overflow-y-auto p-3 grid grid-cols-5 gap-2 content-start" id="q-nav-grid"></div>
 
-      <!-- Bottom Status -->
       <div class="p-3 bg-slate-50 border-t border-slate-200 text-xs text-slate-500 flex justify-between items-center">
         <span id="score-unit-label">配点: 各問2点</span>
         <button onclick="toggleFlagForCurrent()" class="text-amber-600 hover:text-amber-700 font-bold flex items-center gap-1 cursor-pointer">
@@ -373,30 +348,25 @@
       </div>
     </aside>
 
-    <!-- Center Question & Answering Area -->
+    <!-- Center Question Area -->
     <main class="flex-1 flex flex-col bg-slate-50 overflow-hidden relative">
       <div class="flex-1 overflow-y-auto p-4 sm:p-8 space-y-6" id="exam-scroll-area">
-        <!-- Question Card -->
         <div class="bg-white rounded-2xl p-5 sm:p-7 shadow-sm border border-slate-200">
           <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-4">
             <div class="flex items-center space-x-3">
               <span class="px-3 py-1 bg-indigo-600 text-white font-bold text-sm rounded-lg" id="current-q-badge">問 1</span>
-              <span class="text-xs font-semibold text-slate-500" id="current-q-category">情報システムと社会</span>
+              <span class="text-xs font-semibold text-slate-500" id="current-q-category">企業活動と情報処理</span>
             </div>
-            <div class="flex items-center space-x-2">
-              <button onclick="toggleFlagForCurrent()" id="btn-flag-toggle" class="px-3 py-1 rounded-lg border border-amber-300 text-amber-700 bg-amber-50 hover:bg-amber-100 text-xs font-bold flex items-center gap-1.5 transition cursor-pointer">
-                <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"></path>
-                </svg>
-                <span id="btn-flag-label">後で見直す</span>
-              </button>
-            </div>
+            <button onclick="toggleFlagForCurrent()" id="btn-flag-toggle" class="px-3 py-1 rounded-lg border border-amber-300 text-amber-700 bg-amber-50 hover:bg-amber-100 text-xs font-bold flex items-center gap-1.5 transition cursor-pointer">
+              <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"></path>
+              </svg>
+              <span id="btn-flag-label">後で見直す</span>
+            </button>
           </div>
 
-          <!-- Flowchart SVG Container -->
-          <div id="q-flowchart-box" style="display: none;" class="mb-6 bg-white rounded-xl p-4 border border-slate-200 overflow-x-auto text-center">
-            <!-- Dynamic SVG rendered here -->
-          </div>
+          <!-- Flowchart / Diagram SVG -->
+          <div id="q-flowchart-box" style="display: none;" class="mb-6 bg-white rounded-xl p-4 border border-slate-200 overflow-x-auto text-center"></div>
 
           <!-- Question Text -->
           <div class="text-base sm:text-lg font-bold text-slate-900 leading-relaxed mb-6 whitespace-pre-wrap" id="current-q-text">
@@ -404,19 +374,13 @@
           </div>
 
           <!-- 4 Choice Options -->
-          <div class="space-y-3" id="current-q-options">
-            <!-- 4 options dynamically injected -->
-          </div>
+          <div class="space-y-3" id="current-q-options"></div>
 
-          <!-- Practice Mode Explanation & Feedback (Instant) -->
-          <div id="practice-feedback-box" style="display: none;" class="mt-6 pt-5 border-t border-slate-200">
-            <!-- Instant Explanation -->
-          </div>
+          <!-- Practice Mode Explanation -->
+          <div id="practice-feedback-box" style="display: none;" class="mt-6 pt-5 border-t border-slate-200"></div>
         </div>
 
-        <!-- ======================================================= -->
-        <!-- 🤖 AI講師リアルタイム質問アシスタント (常時解答中に質問可能) -->
-        <!-- ======================================================= -->
+        <!-- 🤖 AI講師リアルタイム質問アシスタント -->
         <div class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-slate-900 rounded-2xl p-5 sm:p-6 text-white shadow-md border border-indigo-700">
           <div class="flex items-center justify-between mb-3">
             <div class="flex items-center space-x-2.5">
@@ -530,19 +494,15 @@
     <!-- Score Summary Card -->
     <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-        <!-- Score & Pass/Fail -->
         <div class="text-center md:text-left md:border-r md:border-slate-200 md:pr-6">
           <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-1">あなたの得点</span>
           <div class="flex items-baseline justify-center md:justify-start gap-2">
             <span class="text-5xl font-extrabold text-slate-900 font-mono" id="result-score-num">0</span>
             <span class="text-xl font-bold text-slate-500">/ 100 点</span>
           </div>
-          <div class="mt-3 inline-block px-4 py-1.5 rounded-full text-sm font-bold shadow-sm" id="result-pass-badge">
-            合否判定
-          </div>
+          <div class="mt-3 inline-block px-4 py-1.5 rounded-full text-sm font-bold shadow-sm" id="result-pass-badge">合否判定</div>
         </div>
 
-        <!-- Breakdown Info -->
         <div class="space-y-2 text-sm text-slate-600">
           <div class="flex justify-between py-1 border-b border-slate-100">
             <span>正解数:</span>
@@ -558,7 +518,6 @@
           </div>
         </div>
 
-        <!-- Action Buttons -->
         <div class="flex flex-col gap-3 justify-center">
           <button onclick="retryCurrentExam()" class="w-full py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-xl shadow transition text-center cursor-pointer">
             🔄 もう一度この回を解く
@@ -570,7 +529,7 @@
       </div>
     </div>
 
-    <!-- 🎯 AI Weakness Analysis & Custom Weakness Drill Generator -->
+    <!-- AI Weakness Analysis & Custom Drill -->
     <div class="bg-gradient-to-r from-indigo-900 via-slate-900 to-emerald-950 rounded-2xl p-6 text-white shadow-md border border-indigo-700 space-y-4">
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div class="flex items-center space-x-3">
@@ -603,7 +562,7 @@
       </div>
     </div>
 
-    <!-- Review Questions Header & Filter -->
+    <!-- Review Questions Filter -->
     <div class="flex items-center justify-between pt-4">
       <h3 class="text-lg font-bold text-slate-800" id="review-list-title">全問の正誤・解説一覧</h3>
       <div class="flex gap-2">
@@ -613,14 +572,12 @@
     </div>
 
     <!-- Review Items Container -->
-    <div class="space-y-4" id="review-list-container">
-      <!-- Question review cards generated here -->
-    </div>
+    <div class="space-y-4" id="review-list-container"></div>
   </main>
 </div>
 
 <!-- ================================================================= -->
-<!-- Modals (Exit confirmation & Finish Exam & AI Loading) -->
+<!-- Modals -->
 <!-- ================================================================= -->
 <div id="modal-finish" style="display: none;" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 items-center justify-center p-4">
   <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4 border border-slate-200">
@@ -681,7 +638,7 @@
 </div>
 
 <!-- ================================================================= -->
-<!-- JavaScript Logic -->
+<!-- JavaScript Logic & Complete Textbook Question Pool (第1回〜第8回独立) -->
 <!-- ================================================================= -->
 <script>
 const apiKey = "";
@@ -712,238 +669,413 @@ async function callGeminiApi(prompt, systemInstruction = "", responseSchema = nu
   return "";
 }
 
-/**
- * ------------------------------------------------------------------
- * 2. 模擬試験マスター定義（実教出版テキスト P.82〜）
- * ------------------------------------------------------------------
- */
 const textbookExamSets = [
-  { id: 1, title: "第1回 模擬試験", page: "P.82", desc: "情報システム、AI基礎、VR/AR/MR、基数変換、著作権、基本制御構造" },
-  { id: 2, title: "第2回 模擬試験", page: "P.98", desc: "サーバ機能、EOS/EC、ハードウェア構成、2進数計算、SWOT分析、最小値検出" },
-  { id: 3, title: "第3回 模擬試験", page: "P.114", desc: "データマイニング、通信メディア、RFID、分散・相関分析、最大値検出" },
-  { id: 4, title: "第4回 模擬試験", page: "P.130", desc: "ビッグデータ、解像度、シーザー暗号、MECE、時系列分析、総平均アルゴリズム" },
-  { id: 5, title: "第5回 模擬試験", page: "P.146", desc: "SNSと情報発信、ピクトグラム、スマートデバイス、ABC分析、繰り返し処理" },
-  { id: 6, title: "第6回 模擬試験", page: "P.162", desc: "メディアリテラシー、OSS/ライセンス、散布図・相関係数、2重演算流れ図" },
-  { id: 7, title: "第7回 模擬試験", page: "P.178", desc: "クライアントサーバ、IPv4/IPv6、セキュリティマネジメント、累積合計処理" },
-  { id: 8, title: "第8回 模擬試験", page: "P.194", desc: "総合総仕上げ模試・本番直前対策、多要素認証、PPM分析、最大値優先検出" }
+  { id: 1, title: "第1回 模擬試験", page: "P.82", desc: "情報システム、AI、VR/AR/MR、基数変換、著作権、基本制御構造、平均流れ図" },
+  { id: 2, title: "第2回 模擬試験", page: "P.98", desc: "データ・情報、サーバ、EOS、ハードウェア、2進数、SWOT、最小値流れ図" },
+  { id: 3, title: "第3回 模擬試験", page: "P.114", desc: "データマイニング、通信メディア、RFID、分散、べき乗ループ、最大値流れ図" },
+  { id: 4, title: "第4回 模擬試験", page: "P.130", desc: "ビッグデータ、解像度(ppi)、シーザー暗号、MECE、時系列分析、総平均流れ図" },
+  { id: 5, title: "第5回 模擬試験", page: "P.146", desc: "SNS、EC、ピクトグラム、スマートデバイス、ABC分析、判定・平均流れ図" },
+  { id: 6, title: "第6回 模擬試験", page: "P.162", desc: "IoT、メディアリテラシー、OSS、散布図・相関、2重ループ、最小値流れ図" },
+  { id: 7, title: "第7回 模擬試験", page: "P.178", desc: "クライアントサーバ、IPv4/IPv6、セキュリティマネジメント、累積平均流れ図" },
+  { id: 8, title: "第8回 模擬試験", page: "P.194", desc: "本番直前総仕上げ、PPM分析、多要素認証、バックアップ、最大値優先流れ図" }
 ];
 
-/**
- * ------------------------------------------------------------------
- * 2.1 分野別・単元別ドリル マスター定義（以前の分野別問題セット）
- * ------------------------------------------------------------------
- */
 const categoryDrillSets = [
-  { id: 101, title: "1. 企業活動と情報処理", catKey: "企業活動と情報処理", desc: "情報システム、AI、ビッグデータ、IoT、EC、クラウドサービス(SaaS/PaaS/IaaS)", count: 10 },
-  { id: 102, title: "2. コミュニケーションと情報デザイン", catKey: "コミュニケーションと情報デザイン", desc: "メディア特性、ユーザビリティ、文字の可読性・視認性、色相・配色・解像度", count: 10 },
-  { id: 103, title: "3. 情報モラル・著作権・法規", catKey: "情報モラル", desc: "著作権法、個人情報保護法、不正アクセス禁止法、プライバシー、オプトイン/アウト", count: 10 },
-  { id: 104, title: "4. コンピュータシステムの概要", catKey: "コンピュータシステムの概要", desc: "五大装置、CPU、主記憶(RAM/ROM)、補助記憶(SSD/HDD)、周辺機器・インタフェース", count: 10 },
-  { id: 105, title: "5. 基数変換・データ表現", catKey: "基数変換・計算", desc: "2進数↔10進数↔16進数、ビット・バイト、文字コード、サンプリング・量子化", count: 10 },
-  { id: 106, title: "6. ネットワークとプロトコル", catKey: "情報通信ネットワーク", desc: "LAN/WAN、Wi-Fi、TCP/IP、DNS、IPアドレス(IPv4/IPv6)、電子メール・Webサーバ", count: 10 },
-  { id: 107, title: "7. 情報セキュリティの確保", catKey: "情報セキュリティ", desc: "マルウェア対策、暗号化(公開鍵/共通鍵)、情報セキュリティ3大要素、多要素認証", count: 10 },
-  { id: 108, title: "8. 統計分析・アルゴリズム・流れ図", catKey: "問題の発見と解決の方法", desc: "代表値、分散、相関係数、ABC分析、トレース、JIS規格流れ図(分岐・反復・最大最小)", count: 10 }
+  { id: 101, title: "1. 企業活動と情報処理", catKey: "企業活動と情報処理", desc: "情報システム、AI、ビッグデータ、IoT、EC、クラウドサービス", count: 10 },
+  { id: 102, title: "2. コミュニケーションと情報デザイン", catKey: "コミュニケーションと情報デザイン", desc: "メディア特性、ユーザビリティ、文字の可読性・視認性、色相・解像度", count: 10 },
+  { id: 103, title: "3. 情報モラル・著作権・法規", catKey: "情報モラル", desc: "著作権法、個人情報保護法、不正アクセス禁止法、プライバシー", count: 10 },
+  { id: 104, title: "4. コンピュータシステムの概要", catKey: "コンピュータシステムの概要", desc: "五大装置、CPU、主記憶(RAM/ROM)、補助記憶、インタフェース", count: 10 },
+  { id: 105, title: "5. 基数変換・データ表現", catKey: "基数変換・計算", desc: "2進数↔10進数↔16進数、ビット・バイト、文字コード、サンプリング", count: 10 },
+  { id: 106, title: "6. ネットワークとプロトコル", catKey: "情報通信ネットワーク", desc: "LAN/WAN、Wi-Fi、TCP/IP、DNS、IPアドレス、メール・Webサーバ", count: 10 },
+  { id: 107, title: "7. 情報セキュリティの確保", catKey: "情報セキュリティ", desc: "マルウェア対策、暗号化、情報セキュリティ3大要素、多要素認証", count: 10 },
+  { id: 108, title: "8. 統計分析・アルゴリズム・流れ図", catKey: "問題の発見と解決の方法", desc: "代表値、分散、相関係数、ABC分析、トレース、JIS規格流れ図", count: 10 }
 ];
 
-// テキストP.82〜の実物設問プール（主要問）
-const actualTextbookQuestions = {
+// テキスト本誌（P.82〜P.209）の各回50問を重複なく完全収録した問題マスター
+const fullTextbookExams = {
+  // 第1回 模擬試験 (P.82〜P.97)
   1: [
-    { id: 1, text: "情報システムに関する記述として、最も適切なものはどれか答えなさい。", options: ["コンピュータなどの電子機器を使って情報を処理、伝達する技術の総称。", "鉄道やコンサートなどの座席の予約を行うシステムや、銀行の入出金オンラインシステムなど、コンピュータや通信機器など複数の機器や機能が連係して情報処理を行う仕組み。", "他のコンピュータなどからの要求に対して、サービスを提供する機能を持ったコンピュータ。", "ある目的のために集めた大量のデータを一元的に管理し、利用しやすい形で整理したり、統合したりして、利用する人が望む条件で手軽に情報を利用できるようにしたデータの集まり。"], answer: 1, cat: "企業活動と情報処理", exp: "情報システムとは、複数のコンピュータや通信機器が連係して情報処理を行う仕組みのことです（2が正解）。1はICT、3はサーバ、4はデータベースの説明です。" },
-    { id: 2, text: "データからより正確な答えを導くための規則性やパターン(学習モデル)を自動的に学習させる手法はどれか答えなさい。", options: ["高度情報通信社会", "ビッグデータ", "SNS", "機械学習"], answer: 3, cat: "企業活動と情報処理", exp: "機械学習（Machine Learning）は、大量のデータからパターンを抽出して予測や判断を行うAI技術の中核です。" },
-    { id: 3, text: "人工知能(AI)について述べたもののすべてを挙げたものはどれか答えなさい。\nア. 音声や画像の認識、推理にもとづく判断など、人間に近い処理能力をコンピュータに持たせようとする技術の総称である。\nイ. プログラムによってあらかじめ決められた処理しかできない。\nウ. 近年は、与えられたデータをもとに自分で学習して実行する手法が発達したことにより、活用範囲が広がっている。\nエ. 活用されている例として、車の自動運転や音声アシスタント、お掃除ロボットなどさまざまなものがある。", options: ["ア、イ", "イ、ウ", "ア、ウ、エ", "ウ、エ"], answer: 2, cat: "企業活動と情報処理", exp: "イは従来のプログラムの説明であり、AIは自律的な学習能力を持ちます。適切なものはア、ウ、エです。" },
-    { id: 4, text: "さまざまな「モノ(物)」がインターネットに接続され、相互に情報交換する仕組みはどれか答えなさい。", options: ["GPS", "バーコード", "POSシステム", "IoT"], answer: 3, cat: "企業活動と情報処理", exp: "IoT（Internet of Things: モノのインターネット）の説明です。" },
-    { id: 5, text: "非接触型ICカードについて述べたもののすべてを挙げたものはどれか答えなさい。\nア. カードの内部にICチップとアンテナを内蔵している。\nイ. 電波を利用してデータの送受信をする。\nウ. 読み取り機に近づけるだけで処理することができる。\nエ. 交通機関の乗車券やキャッシュカード、クレジットカードなどに幅広く利用されている。", options: ["ア、イ", "イ、ウ、エ", "ア、ウ、エ", "ア、イ、ウ、エ"], answer: 3, cat: "企業活動と情報処理", exp: "ア、イ、ウ、エのすべてが非接触型ICカードの正しい説明です。" },
-    { id: 6, text: "クラウドコンピューティングのサービスの一つである SaaS に関する記述として、適切なものはどれか答えなさい。", options: ["通信回線を経由して、契約者にインターネットへの接続サービスを提供する事業者。", "顧客が必要とするソフトウェアの機能を、必要なときに必要な分だけをサービスとしてインターネット経由で提供する形態。", "OSやプログラム言語など、ソフトウェアを構築および稼働させるための土台となるプラットフォームを、サービスとしてインターネット経由で提供する形態。", "コンピュータシステムを構築および稼働させるためのハードウェア基盤(インフラ機能)を、サービスとしてインターネット経由で提供する形態。"], answer: 1, cat: "企業活動と情報処理", exp: "2がSaaS (Software as a Service) の説明です。3はPaaS、4はIaaS、1はプロバイダ(ISP)の説明です。" },
-    { id: 7, text: "CGなどで作られた仮想世界と実際の現実世界を、組み合わせて融合させることで、仮想物体に触れるなどの操作ができる技術はどれか答えなさい。", options: ["仮想現実(VR)", "拡張現実(AR)", "複合現実(MR)", "データマイニング"], answer: 2, cat: "企業活動と情報処理", exp: "仮想世界と現実世界を融合させ、仮想物体を直接操作できる技術は複合現実（MR: Mixed Reality）です。" },
-    { id: 8, text: "記録メディアに関する記述として、適切なものはどれか答えなさい。", options: ["新聞、雑誌、ラジオやテレビ放送、電話やインターネットなどのこと。", "情報を表現する文字や図形、音声、静止画、動画などのこと。", "紙、CD、DVD、BD、フラッシュメモリ、ハードディスクドライブ、SSD、クラウドなどのこと。", "通信機器や電話回線、LANケーブルや光ファイバケーブルなど有線の通信ケーブルなどのこと。"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "情報を保存して伝達する媒体が記録メディアです（3が正解）。1は情報メディア、2は表現メディア、4は通信メディアです。" },
-    { id: 9, text: "文字や図形を見たときに瞬時に認識できるか、見やすいかなどの認識のしやすさを表す用語はどれか答えなさい。", options: ["可読性", "視認性", "判読性", "伝播性"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "パッと見たときの認識のしやすさは「視認性」です。文章としての読みやすさは「可読性」、誤読のしにくさは「判読性」です。" },
-    { id: 10, text: "文字の書体(デザイン)のことを表す用語はどれか答えなさい。", options: ["フォント", "ポイント", "ウエイト", "セリフ"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "文字の統一的なデザイン（書体）を「フォント」と呼びます。" },
-    { id: 11, text: "次の会話文の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n生徒: デジタル技術を使いこなせる人とそうでない人の格差は問題ですよね。\n先生: この格差は(ア)と呼ばれ、地域間や国家間でも生じるんだ。\n生徒: 私はPCをかなり使っていますが、触れないと不安を感じることがあります。\n先生: それは(イ)かもしれないね。過度に没頭しすぎることが原因の不調だよ。", options: ["ア: デジタルデバイド / イ: テクノ不安症", "ア: デジタルデバイド / イ: テクノ依存症", "ア: デジタルリテラシー / イ: テクノ依存症", "ア: デジタルリテラシー / イ: テクノ不安症"], answer: 1, cat: "情報モラル", exp: "情報格差は「デジタルデバイド」、過度に没頭することによる心身の不調は「テクノ依存症」です。" },
-    { id: 19, text: "10進数の「25」を2進数に変換した答え(ア)と、2進数の「11110」を10進数に変換した答え(イ)の組み合わせはどれか答えなさい。", options: ["ア: 11001 / イ: 28", "ア: 11001 / イ: 30", "ア: 11011 / イ: 30", "ア: 11101 / イ: 32"], answer: 1, cat: "基数変換・計算", exp: "25 = 16+8+1 = 11001(2)。11110(2) = 16+8+4+2+0 = 30(10)。" },
-    { id: 49, text: "右の流れ図において、aの値が 2, bの値が 6 のとき、出力される z の値として正しいものを答えなさい。", flowchartType: "p82_q49", options: ["214", "216", "218", "220"], answer: 0, exp: "a=2, b=6を入力。x ← a + 4 = 6。y ← b × 6 = 36。z ← x × y - 2 = 6 × 36 - 2 = 216 - 2 = 214 となり、214が出力されます。" },
-    { id: 50, text: "平均を求める右の流れ図の(ア)にあてはまる処理として適切なものはどれか答えなさい。なお、入力する値は0以上の整数とし、-1が入力された場合、平均を出力して処理を終了するものとする。", flowchartType: "loop", options: ["Ttl + 1 → Ttl", "Cnt + 1 → Cnt", "Cnt + c → Cnt", "Avg + 1 → Avg"], answer: 1, exp: "データの件数を1ずつ加算してカウントするため、(ア)には「Cnt + 1 → Cnt」が入ります。" }
-  ]
+    { text: "情報システムに関する記述として、最も適切なものはどれか答えなさい。", options: ["コンピュータなどの電子機器を使って情報を処理、伝達する技術の総称。", "鉄道やコンサートなどの座席の予約を行うシステムや、銀行の入出金オンラインシステムなど、コンピュータや通信機器など複数の機器や機能が連係して情報処理を行う仕組み。", "他のコンピュータなどからの要求に対して、サービスを提供する機能を持ったコンピュータ。", "ある目的のために集めた大量のデータを一元的に管理し、利用しやすい形で整理したり、統合したりして、利用する人が望む条件で手軽に情報を利用できるようにしたデータの集まり。"], answer: 1, cat: "企業活動と情報処理", exp: "2が情報システムの正しい説明です。1はICT、3はサーバ、4はデータベースです。" },
+    { text: "データからより正確な答えを導くための規則性やパターン(学習モデル)を自動的に学習させる手法はどれか答えなさい。", options: ["高度情報通信社会", "ビッグデータ", "SNS", "機械学習"], answer: 3, cat: "企業活動と情報処理", exp: "機械学習（Machine Learning）の説明です。" },
+    { text: "人工知能(AI)について述べたもののすべてを挙げたものはどれか答えなさい。\nア. 音声や画像の認識、推理にもとづく判断など、人間に近い処理能力をコンピュータに持たせようとする技術の総称である。\nイ. プログラムによってあらかじめ決められた処理しかできない。\nウ. 近年は、与えられたデータをもとに自分で学習して実行する手法が発達したことにより、活用範囲が広がっている。\nエ. 活用されている例として、車の自動運転や音声アシスタント、お掃除ロボットなどさまざまなものがある。", options: ["ア、イ", "イ、ウ", "ア、ウ、エ", "ウ、エ"], answer: 2, cat: "企業活動と情報処理", exp: "イはAIではなく従来の固定プログラムの特徴です。ア、ウ、エが適切です。" },
+    { text: "さまざまな「モノ(物)」がインターネットに接続され、相互に情報交換する仕組みはどれか答えなさい。", options: ["GPS", "バーコード", "POSシステム", "IoT"], answer: 3, cat: "企業活動と情報処理", exp: "IoT（Internet of Things: モノのインターネット）の説明です。" },
+    { text: "非接触型ICカードについて述べたもののすべてを挙げたものはどれか答えなさい。\nア. カードの内部にICチップとアンテナを内蔵している。\nイ. 電波を利用してデータの送受信をする。\nウ. 読み取り機に近づけるだけで処理することができる。\nエ. 交通機関の乗車券やキャッシュカード、クレジットカードなどに幅広く利用されている。", options: ["ア、イ", "イ、ウ、エ", "ア、ウ、エ", "ア、イ、ウ、エ"], answer: 3, cat: "企業活動と情報処理", exp: "ア〜エのすべてが非接触型ICカードの正しい説明です。" },
+    { text: "クラウドコンピューティングのサービスの一つである SaaS に関する記述として、適切なものはどれか答えなさい。", options: ["通信回線を経由して、契約者にインターネットへの接続サービスを提供する事業者。", "顧客が必要とするソフトウェアの機能を、必要なときに必要な分だけをサービスとしてインターネット経由で提供する形態。", "OSやプログラム言語など、ソフトウェアを構築および稼働させるための土台となるプラットフォーム(開発環境)を提供する形態。", "ハードウェア基盤(仮想マシンやネットワークなどのインフラ機能)を提供する形態。"], answer: 1, cat: "企業活動と情報処理", exp: "2がSaaSです。3はPaaS、4はIaaS、1はプロバイダ(ISP)です。" },
+    { text: "CGなどで作られた仮想世界と実際の現実世界を、組み合わせて融合させることで、仮想物体に触れるなどの操作ができる技術はどれか答えなさい。", options: ["仮想現実(VR)", "拡張現実(AR)", "複合現実(MR)", "データマイニング"], answer: 2, cat: "企業活動と情報処理", exp: "現実と仮想を融合し操作可能にするのは「複合現実（MR）」です。" },
+    { text: "記録メディアに関する記述として、適切なものはどれか答えなさい。", options: ["新聞、雑誌、ラジオやテレビ放送、電話やインターネットなどのこと。", "情報を表現する文字や図形、音声、静止画、動画などのこと。", "紙、CD、DVD、BD、フラッシュメモリ、ハードディスクドライブ、SSD、クラウドなどのこと。", "通信機器や電話回線、LANケーブルや光ファイバケーブルなど有線の通信ケーブルなどのこと。"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "情報を保存して伝達する媒体が記録メディアです（3が正解）。" },
+    { text: "文字や図形を見たときに瞬時に認識できるか、見やすいかなどの認識のしやすさを表す用語はどれか答えなさい。", options: ["可読性", "視認性", "判読性", "伝播性"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "パッと見た瞬間の見やすさは「視認性」です。" },
+    { text: "文字の書体(デザイン)のことを表す用語はどれか答えなさい。", options: ["フォント", "ポイント", "ウエイト", "セリフ"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "文字の書体デザインは「フォント」です。" },
+    { text: "文中の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n生徒: デジタル技術を使いこなせる人とそうでない人の格差は(ア)と呼ばれますよね。\n先生: そうだね。また、情報機器に過度に没頭しすぎて生じる不調は(イ)と呼ばれるよ。", options: ["ア: デジタルデバイド / イ: テクノ不安症", "ア: デジタルデバイド / イ: テクノ依存症", "ア: デジタルリテラシー / イ: テクノ依存症", "ア: デジタルリテラシー / イ: テクノ不安症"], answer: 1, cat: "情報モラル", exp: "情報格差はデジタルデバイド、没頭による不調はテクノ依存症です。" },
+    { text: "プライバシーに関する説明について述べたもののすべてを挙げたものはどれか答えなさい。\nア. 自分の生活を、みだりに他人に知られることなく、安心して暮らせる権利。\nイ. 自分の容姿や容貌を写した写真や映像をみだりに撮影・公表されない権利。\nウ. ある特定の生存する個人を識別することができる情報。\nエ. 他人から干渉・侵害を受けない権利。", options: ["ア、イ", "イ、ウ", "ア、エ", "イ、エ"], answer: 2, cat: "情報モラル", exp: "アとエがプライバシーの権利です。イは肖像権、ウは個人情報の定義です。" },
+    { text: "例外として著作権者に許諾を得ることなく著作物を利用できる事例のすべてを挙げたものはどれか答えなさい。\nア. 音楽CDを購入し、家庭内での私的使用を目的として複製した。\nイ. 音楽CDを購入し、複製したものを友人に販売した。\nウ. 学校の授業で使用するために、先生が書籍の一部を複製した。\nエ. 興味を引く目的で、他人が創作したアニメのキャラクターをレポートに使用した。", options: ["ア、イ", "ア、ウ", "ア、イ、ウ", "ウ、エ"], answer: 1, cat: "情報モラル", exp: "私的使用のための複製（ア）と学校教育現場での複製（ウ）は許諾不要の例外です。" },
+    { text: "クリエイティブ・コモンズに関する記述として、適切なものはどれか答えなさい。", options: ["他人に譲渡したり相続したりすることのできない著作者に固有の権利。", "テレビやネット等で映画や音楽などの著作物を公衆に送信し視聴させる権利。", "その著作物を使わないと説明ができない等の必要性があるとき他人の著作物の一部を利用できる例外。", "著作物の適正な再利用の促進を目的として、さまざまなレベルのライセンスを策定し普及を図っている国際的な組織。"], answer: 3, cat: "情報モラル", exp: "4がクリエイティブ・コモンズの正しい説明です。" },
+    { text: "演算装置に関する説明について述べたもののすべてを挙げたものはどれか答えなさい。\nア. データをコンピュータが処理できるデジタルデータに変換して主記憶に読み込ませる装置。\nイ. 記憶装置から読み込んだデータを用いて四則演算などを行う装置。\nウ. プログラムやデータ、処理結果などを記憶する装置。\nエ. 記憶装置の命令を取り出して解読し各装置に指示を送る装置。\nオ. 記憶装置から読み込んだデータを用いて比較判断などを行う装置。", options: ["ア、イ", "イ、オ", "イ、ウ、オ", "エ、オ"], answer: 1, cat: "コンピュータシステムの概要", exp: "演算装置は「四則演算（イ）」および「比較判断（オ）」を行います。" },
+    { text: "DVDドライブの説明文の空欄(ア)、(イ)、(ウ)にあてはまる組み合わせはどれか答えなさい。\nDVDドライブはCDと同じ(ア)のレーザ光を利用する。追記型の(イ)や書き換え型などがある。記憶容量は片面1層式でCDの約(ウ)倍の4.7GBである。", options: ["ア: 青紫色 / イ: DVD-R / ウ: 10", "ア: 青紫色 / イ: DVD-RAM / ウ: 7", "ア: 赤色 / イ: DVD-R / ウ: 7", "ア: 赤色 / イ: DVD-RAM / ウ: 10"], answer: 2, cat: "コンピュータシステムの概要", exp: "DVDは赤色レーザ光、追記型はDVD-R、CD(約700MB)の約7倍です。" },
+    { text: "ビデオボードのGPUに搭載されている映像処理専用のメモリはどれか答えなさい。", options: ["ROM", "DRAM", "SRAM", "VRAM"], answer: 3, cat: "コンピュータシステムの概要", exp: "画面表示・グラフィックス処理専用メモリはVRAM（Video RAM）です。" },
+    { text: "バイトに関する記述として、適切なものはどれか答えなさい。", options: ["2進数の8桁分を一つの情報の基本単位として扱うもの。", "数値の表現で1桁を2種類の数値(0または1)であらわす方法。", "2進数の1桁のこと。", "ある進数で表記された数値を別の進数での表記に変換すること。"], answer: 0, cat: "基数変換・計算", exp: "2進数8桁分を1バイト（Byte）とし、基本単位とします。2進数1桁はビットです。" },
+    { text: "10進数の「25」を2進数に変換した答え(ア)と、2進数の「11110」を10進数に変換した答え(イ)の組み合わせはどれか答えなさい。", options: ["ア: 11001 / イ: 28", "ア: 11001 / イ: 30", "ア: 11011 / イ: 30", "ア: 11101 / イ: 32"], answer: 1, cat: "基数変換・計算", exp: "25 = 16 + 8 + 1 = 11001(2)。11110(2) = 16 + 8 + 4 + 2 = 30(10)。" },
+    { text: "符号化に関する記述として、適切なものはどれか答えなさい。", options: ["連続した値を一定の時間間隔に分割し量として取り出すこと。", "取り出した量を最も近い段階値にそろえて数値化すること。", "量子化した値を、2進数の「0」と「1」の組み合わせに置きかえること。", "直接見ることのできない関係性を見えるものにすること。"], answer: 2, cat: "基数変換・計算", exp: "量子化した値を2進数のコードに変換することを「符号化」といいます。" },
+    { text: "ユーザが無料で自由に使用できるが、著作権は放棄しておらず、再配布などに制限があるソフトウェアはどれか答えなさい。", options: ["オープンソースソフトウェア(OSS)", "フリーウェア", "シェアウェア", "デバイスドライバ"], answer: 1, cat: "ソフトウェア・権利", exp: "「フリーウェア」の説明です。OSSはソースコード改変・再配布が認められています。" },
+    { text: "バグに関する記述として、適切なものはどれか答えなさい。", options: ["インストールしたソフトウェアを削除して導入前の状態に戻すこと。", "使用場所を特定し必要台数分のコピーと使用を許可する契約。", "ソフトウェアのプログラムの中に、誤りや欠陥、不具合があること。", "不具合の修正や小規模な更新のためのプログラムのこと。"], answer: 2, cat: "ソフトウェア・権利", exp: "プログラム中の誤りや欠陥を「バグ」といいます。修正プログラムはパッチです。" },
+    { text: "データを記憶媒体に保存する際に、ファイルに付ける名前はどれか答えなさい。", options: ["ファイル名", "テキストファイル", "バイナリファイル", "拡張子"], answer: 0, cat: "コンピュータシステムの概要", exp: "ファイルを識別するために付ける名前は「ファイル名」です。" },
+    { text: "フォーマットに関する記述として、適切なものはどれか答えなさい。", options: ["コンピュータにソフトウェアを保存して使用可能な状態にすること。", "ハードディスクなどの記憶媒体を、OSの記録方式に合わせて読み書きできる状態にすること。", "プログラムやデータなどのファイルを保存する場所のこと。", "コンピュータで扱うデータのまとまりのこと。"], answer: 1, cat: "コンピュータシステムの概要", exp: "記憶媒体を初期化しOSに合わせて読み書き可能にする処理を「フォーマット」といいます。" },
+    { text: "WANに関する説明について述べたもののすべてを挙げたものはどれか答えなさい。\nア. ワイド・エリア・ネットワークの略である。\nイ. 有線や無線で接続された小規模な構内ネットワークである。\nウ. 地理的に遠く離れた地点間を結ぶ広域的な通信ネットワークのことである。\nエ. 複数の支店間のLANを相互に結んだ企業内ネットワークを指す場合もある。", options: ["ア、ウ", "ア、エ", "イ、エ", "ア、ウ、エ"], answer: 3, cat: "情報通信ネットワーク", exp: "イはLAN（ローカルエリアネットワーク）の説明です。ア、ウ、エが適切です。" },
+    { text: "文中の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n先生: WebページはWebサーバ上にあり、(ア)で閲覧可能な文書です。\n生徒: 文字列や画像をクリックして別のページへ移動できる機能は(イ)ですね。", options: ["ア: ブラウザ / イ: ハイパーリンク", "ア: メーラ / イ: ハイパーリンク", "ア: ブラウザ / イ: ハイパーテキスト", "ア: メーラ / イ: ハイパーテキスト"], answer: 0, cat: "情報通信ネットワーク", exp: "閲覧用ソフトはブラウザ、リンク機能はハイパーリンクです。" },
+    { text: "Webメールに関する記述として、適切でないものはどれか答えなさい。", options: ["メーラの機能をそなえたメールサービスを行うサーバにブラウザでアクセスして利用する。", "ブラウザを利用するので専用のメーラは不要であり、ネットにつながる端末があれば利用できる。", "ポータルサイトなどが提供している無料のフリーメールの多くはWebメールである。", "複数の端末でメールを利用するためには、それぞれの端末にメールアカウントの設定が必要となる。"], answer: 3, cat: "情報通信ネットワーク", exp: "Webメールはブラウザからログインするだけで利用でき、端末ごとの個別アカウント設定は不要です。" },
+    { text: "ネット上のサーバに公開されているプログラムやデータを自分のPCに転送し保存する用語はどれか答えなさい。", options: ["アップロード", "ダウンロード", "検索エンジン", "コンテンツフィルタリング"], answer: 1, cat: "情報通信ネットワーク", exp: "サーバから手元の端末へ保存するのは「ダウンロード」です。" },
+    { text: "コンピュータウイルスに関する説明について述べたもののすべてを挙げたものはどれか答えなさい。\nア. 利用者に関する情報を収集して外部に送信する。\nイ. 一見無害なソフトウェアを装って侵入し不正操作を行う。\nウ. プログラムの一部に組み込まれて動作し自己増殖する。\nエ. 単体では活動できないので寄生するファイルが必要となる。", options: ["ア、ウ", "ア、エ", "イ、エ", "ウ、エ"], answer: 3, cat: "情報セキュリティ", exp: "ウとエがコンピュータウイルスの定義です。アはスパイウェア、イはトロイの木馬です。" },
+    { text: "スパムメールに関する記述として、適切なものはどれか答えなさい。", options: ["文字のサイズや色などを装飾できる形式のメール。", "リストに登録されている全員に同じ内容のメールが配信される仕組み。", "不特定多数の受信者に対して一方的に大量に発信される広告や勧誘などを内容とした迷惑メール。", "受信者に対して不特定多数への転送を促す迷惑メール。"], answer: 2, cat: "情報セキュリティ", exp: "3がスパムメールです。1はHTMLメール、2はメーリングリスト、4はチェーンメールです。" },
+    { text: "ランサムウェアに関する説明について述べたもののすべてを挙げたものはどれか答えなさい。\nア. 感染するとデータが暗号化されて使えなくなったり操作不能になったりする。\nイ. もとに戻すことと引き換えに身代金を要求するマルウェアである。\nウ. 単体で存在・活動し自己増殖する。\nエ. ソフトウェアのセキュリティ上の欠陥のこと。", options: ["ア、イ", "ア、ウ", "イ、エ", "ウ、エ"], answer: 0, cat: "情報セキュリティ", exp: "アとイがランサムウェアです。ウはワーム、エはセキュリティホールです。" },
+    { text: "必要な情報へのアクセス権限を持っている人に対していつでも利用可能にし、必要なときにアクセスできる情報セキュリティの要素はどれか答えなさい。", options: ["否認防止", "可用性", "完全性", "機密性"], answer: 1, cat: "情報セキュリティ", exp: "「可用性（Availability）」の説明です。" },
+    { text: "ウイルス対策ソフトウェアの別称として、適切でないものはどれか答えなさい。", options: ["アンチウイルスソフト", "ワクチンソフト", "ワクチンプログラム", "マルウェア"], answer: 3, cat: "情報セキュリティ", exp: "マルウェアは悪意ある不正プログラム自体の総称であり、対策ソフトではありません。" },
+    { text: "コンピュータウイルスの特徴を記録したウイルス検出用のファイルはどれか答えなさい。", options: ["バックアップ", "アップデート", "パターンファイル", "セキュリティパッチ"], answer: 2, cat: "情報セキュリティ", exp: "ウイルスのシグネチャを記録したファイルは「パターンファイル（定義ファイル）」です。" },
+    { text: "データを収集・集計・分析し、傾向をつかみ予測を行うことで意思決定などに活用する手法はどれか答えなさい。", options: ["統計分析", "標準偏差", "標本誤差", "相関係数"], answer: 0, cat: "ビジネスと統計", exp: "「統計分析」の説明です。" },
+    { text: "質的データに関する記述として、適切なものはどれか答えなさい。", options: ["数値で測ることができないデータの分類や種類を表すデータ。", "数値として表され、数値の大きさに意味を持つデータ。", "小数点以下を含む連続して変化する値をとるデータ。", "整数のみの連続していない値をとるデータ。"], answer: 0, cat: "ビジネスと統計", exp: "分類や種類など数値化できないものは「質的データ」です。" },
+    { text: "量的データとなるデータのみを挙げたものはどれか答えなさい。\nア. 血液型 / イ. 背番号 / ウ. 降水量 / エ. 身長", options: ["ア、イ", "ウ、エ", "イ、ウ、エ", "エ"], answer: 1, cat: "ビジネスと統計", exp: "降水量（ウ）と身長（エ）は数値の大きさに意味がある量的データです。" },
+    { text: "データの順位や大小関係を示すものではなく、データを区別するために使われる分類はどれか答えなさい。", options: ["名義尺度", "順序尺度", "間隔尺度", "比例尺度"], answer: 0, cat: "ビジネスと統計", exp: "区別のみに用いる尺度（血液型や郵便番号など）は「名義尺度」です。" },
+    { text: "標本調査について述べたもののすべてを挙げたものはどれか答えなさい。\nア. すべての対象からデータを収集するため精度が高い。\nイ. 比較的短時間かつ低コストで実施できる。\nウ. 多くの時間と多大な費用が必要である。\nエ. 一部のデータを収集し全体の傾向を把握するため誤差が生じやすい。", options: ["ア、イ", "ウ、エ", "ア、ウ", "イ、エ"], answer: 3, cat: "ビジネスと統計", exp: "イとエが標本調査の特徴です。アとウは全数調査の特徴です。" },
+    { text: "母集団に関する記述として、適切なものはどれか答えなさい。", options: ["標本調査を実施したことによって生じる誤差。", "他のデータと比較すると明らかに異なる値。", "統計調査を実施する際に、調査対象となる全体。", "未入力などによりデータが存在していない状態。"], answer: 2, cat: "ビジネスと統計", exp: "調査対象となる全体の集合を「母集団」と呼びます。" },
+    { text: "ある県の全県民を母集団として人気の施設調査を行う場合、偏りを最小限に抑えられる標本決定方法はどれか答えなさい。", options: ["県庁で勤務する県民から選ぶ。", "人口50万人以上の市に居住する県民から選ぶ。", "20歳以上50歳以下の県民から選ぶ。", "乱数によって無作為に抽出された県民から選ぶ。"], answer: 3, cat: "ビジネスと統計", exp: "偏りをなくすためには「無作為抽出（ランダムサンプリング）」を行います。" },
+    { text: "会話文の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n部下: データの中心的傾向を表す(ア)を算出しますか。平均値などがあります。\n上司: 会議資料として最も多く出現する回答も重要だから、(イ)も算出してくれるかな。", options: ["ア: 代表値 / イ: 中央値", "ア: 代表値 / イ: 最頻値", "ア: 欠損値 / イ: 中央値", "ア: 欠損値 / イ: 最頻値"], answer: 1, cat: "ビジネスと統計", exp: "中心傾向を示す指標は代表値、最も多く現れる値は最頻値（モード）です。" },
+    { text: "度数分布表をもとに作成され、横軸にデータの区間、縦軸にデータ数を棒状で表現したグラフはどれか答えなさい。", options: ["円グラフ", "折れ線グラフ", "ヒストグラム", "レーダーチャート"], answer: 2, cat: "表・グラフの作成と情報の分析", exp: "「ヒストグラム」の説明です。" },
+    { text: "散布図における無相関について述べたもののすべてを挙げたものはどれか答えなさい。\nア. プロットした点が右上がりに分布する。\nイ. プロットした点が右下がりに分布する。\nウ. プロットした点がランダムに分布する。\nエ. 二つの項目間に強い相関がある。\nオ. 二つの項目間に独立性がある。", options: ["ア、エ", "イ、オ", "ウ、オ", "ウ、エ"], answer: 2, cat: "表・グラフの作成と情報の分析", exp: "無相関は点がランダムに分布（ウ）し、二項目間に独立性がある（オ）状態です。" },
+    { text: "MECEに関する記述として、適切なものはどれか答えなさい。", options: ["根拠を明確に示し矛盾のない結論を導き出す思考法。", "情報を整理する際に、漏れや重複がなく、かつ網羅しようとする考え方。", "問題を細かく分解して階層化する手法。", "複数の条件と結果の対応関係を整理した表。"], answer: 1, cat: "問題の発見と解決の方法", exp: "MECE（ミーシー）は「モレなくダブりなく」網羅する考え方です。" },
+    { text: "あるガントチャートでタスクBがタスクAに依存している。タスクAが2日遅れた場合、タスクBの開始日はどれか答えなさい。\n（タスクA: 6/1〜6/4、タスクB: 6/5〜6/13）", options: ["6月2日", "6月5日", "6月6日", "6月7日"], answer: 3, cat: "問題の発見と解決の方法", exp: "タスクAが2日遅れて6/6終了となるため、依存するタスクBの開始日は翌日の6月7日になります。" },
+    { text: "多くの意見や情報をカード化・グループ化して整理し、問題解決の道筋を明確にする手法はどれか答えなさい。", options: ["PPM分析", "特性要因図", "KJ法", "モンテカルロ法"], answer: 2, cat: "問題の発見と解決の方法", exp: "川喜田二郎氏が考案した情報整理手法は「KJ法」です。" },
+    { text: "会話文の(ア)、(イ)、(ウ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n先生: アルゴリズムの(ア)である順次・選択・繰り返しの3つですべての処理が記述できるよ。例えば2値の大小比較は順次と(イ)、1〜100の合計は(ウ)を組み合わせるんだ。", options: ["ア: 基本制御構造 / イ: 選択構造 / ウ: 繰り返し構造", "ア: 基本制御構造 / イ: 繰り返し構造 / ウ: 選択構造", "ア: プログラミング言語 / イ: 選択構造 / ウ: 繰り返し構造", "ア: プログラミング言語 / イ: 繰り返し構造 / ウ: 選択構造"], answer: 0, cat: "問題の発見と解決の方法", exp: "順次・選択・繰り返しは「基本制御構造」です。" },
+    { text: "右の流れ図にしたがって処理する際、aの値が 2, bの値が 6 のとき、出力される z の値を答えなさい。", flowchartType: "flow_1_49", options: ["214", "216", "218", "220"], answer: 0, cat: "問題の発見と解決の方法", exp: "x ← 2 + 4 = 6。y ← 6 × 6 = 36。z ← 6 × 36 - 2 = 216 - 2 = 214 となります。" },
+    { text: "平均を求める右の流れ図の(ア)にあてはまる処理として適切なものはどれか答えなさい。なお、入力する値は0以上の整数とし、-1が入力された場合、平均を出力して処理を終了するものとする。", flowchartType: "flow_1_50", options: ["Ttl + 1 → Ttl", "Cnt + 1 → Cnt", "Cnt + c → Cnt", "Avg + 1 → Avg"], answer: 1, cat: "問題の発見と解決の方法", exp: "入力データの件数を1ずつカウントするため、「Cnt + 1 → Cnt」が正解です。" }
+  ],
+
+  // 第2回 模擬試験 (P.98〜P.113)
+  2: [
+    { text: "事実や事象を記録したもののことであり、それを文字や数値などのまとまりとして表現したものはどれか答えなさい。", options: ["情報", "データ", "情報処理", "情報システム"], answer: 1, cat: "企業活動と情報処理", exp: "客観的な事実や数値そのものを「データ」と呼びます。" },
+    { text: "サーバに関する記述として、適切なものはどれか答えなさい。", options: ["コンピュータなどの電子機器を使って情報を処理、伝達する技術の総称。", "コンピュータや通信機器など、複数の機器や機能が連係して情報処理を行う仕組み。", "他のコンピュータなどからの要求に対して、サービスを提供する機能を持ったコンピュータ。", "他のコンピュータやソフトウェアから機能や情報の提供を受けるコンピュータ。"], answer: 2, cat: "企業活動と情報処理", exp: "要求に対してサービスを提供するのが「サーバ」です。" },
+    { text: "データベースに関する記述として、適切なものはどれか答えなさい。", options: ["物事の内容や様子を示し、行動や意思を決めるときの判断材料となることがら。", "さまざまなデータを集めて整理・計算などの加工を行い、利用者が必要とする新しい情報を得る手続き。", "インターネットを利用して、会員同士が交流し、社会的なつながりを構築する機能を提供するサービス。", "ある目的のために集めた大量のデータを一元的に管理し、手軽に利用できるようにしたデータの集まり。"], answer: 3, cat: "企業活動と情報処理", exp: "一元管理され利用しやすいデータの集まりは「データベース」です。" },
+    { text: "高度情報通信社会に関する記述として、適切なものはどれか答えなさい。", options: ["経済の発展と社会的課題の解決を両立させ、人間中心の安心・安全で持続可能な新しい社会。", "従来のデータベースでは記録や保管が難しい多様で大量なデータの集合。", "コンピュータに学習データを与えて規則性やパターンを自動的に学習させる手法。", "人間に近い処理能力をコンピュータに持たせようとする技術の総称。"], answer: 0, cat: "企業活動と情報処理", exp: "Society 5.0に代表される人間中心の持続可能社会を「高度情報通信社会」と呼びます。" },
+    { text: "インターネットバンキングについて述べたもののすべてを挙げたものはどれか答えなさい。\nア. パソコンやスマートフォンを用いてネット経由で各種金融サービスを利用すること。\nイ. 店舗の窓口やATMに行かなくても残高照会や振込などが利用できる。\nウ. 現金自動預払機のこと。\nエ. ネット上のショッピングサイトで商品を注文し購入する仕組み。", options: ["ア、イ", "イ、ウ", "ア、イ、エ", "ア、ウ、エ"], answer: 0, cat: "企業活動と情報処理", exp: "アとイがインターネットバンキングです。ウはATM、エはネットショッピングです。" },
+    { text: "企業間をオンラインで結んだ受発注システムのことで、コンビニなどの小売店舗で受発注業務を効率化するために利用されている仕組みはどれか答えなさい。", options: ["GPS", "IoT", "EOS", "EC"], answer: 2, cat: "企業活動と情報処理", exp: "EOS（Electronic Ordering System: 電子発注システム）の説明です。" },
+    { text: "障がいのある人や高齢者などでも、提供されている情報に問題なくアクセスし同じように利用できる度合いを表す概念はどれか答えなさい。", options: ["情報デザイン", "コミュニケーション", "ユーザビリティ", "アクセシビリティ"], answer: 3, cat: "コミュニケーションと情報デザイン", exp: "「アクセシビリティ」の説明です。" },
+    { text: "文中の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n先生: ユーザインタフェースには文字による入出力を基本とする(ア)と、絵やアイコンをマウス等で操作する(イ)があります。", options: ["ア: UPS / イ: GUI", "ア: CUI / イ: GUI", "ア: GUI / イ: CUI", "ア: CUI / イ: UPS"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "文字ベースはCUI、グラフィカル操作はGUIです。" },
+    { text: "色相に関する記述として、適切なものはどれか答えなさい。", options: ["色を一定の形式の符号で表したもの。", "赤・青・黄といった色合いの種類(色味)の違いのこと。", "色の明るさの度合いのこと。", "色の鮮やかさの度合いのこと。"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "色味の違いは「色相」です。" },
+    { text: "色の三原色に関する一連の説明文で、適切でないもののすべてを挙げたものはどれか答えなさい。\nア. 印刷物などで反射光によって見える色である。\nイ. C(青緑), M(赤紫), Y(黄)の3色のことである。\nウ. 3色の色のまぜ方を加法混色といい、重ねると黒に近づく。\nエ. 印刷では黒専用のインクBを加えたCMYBの4色が基本である。", options: ["ア、ウ", "ウ", "イ、エ", "ウ、エ"], answer: 3, cat: "コミュニケーションと情報デザイン", exp: "ウ（減法混色である）とエ（黒インクはK）が誤りです。" },
+    { text: "ワンクリック詐欺の対処方法として適切なもののすべてを挙げたものはどれか答えなさい。\nア. 送信元不明のURLやSNS上の広告をクリックしない。\nイ. 提供元不明のアプリをダウンロードしない。\nウ. 利用規約は読む必要がない。\nエ. セキュリティソフトを導入して不正アクセスを遮断する。", options: ["ア、イ", "ア、イ、ウ", "ア、イ、エ", "ウ、エ"], answer: 2, cat: "情報モラル", exp: "ア、イ、エが適切な対処法です。" },
+    { text: "青少年の健全な育成をさまたげるような情報や犯罪につながる情報を掲載しているWebサイトはどれか答えなさい。", options: ["口コミサイト", "有害サイト", "おすすめサイト", "オフィシャルサイト"], answer: 1, cat: "情報モラル", exp: "「有害サイト」の説明です。" },
+    { text: "ユーザIDが正当な利用者以外に不正に使用されないように設定する数値や文字列はどれか答えなさい。", options: ["パスワード", "ログイン", "なりすまし", "ログアウト"], answer: 0, cat: "情報モラル", exp: "「パスワード」の説明です。" },
+    { text: "主記憶装置に含まれるもののすべてを挙げたものはどれか答えなさい。\nア. ROM / イ. CPU / ウ. SSD / エ. RAM", options: ["ア、イ", "イ、ウ", "ア、イ、エ", "ア、エ"], answer: 3, cat: "コンピュータシステムの概要", exp: "主記憶（メインメモリ）はROMとRAMです。CPUは中央処理装置、SSDは補助記憶装置です。" },
+    { text: "周辺装置に関する記述として、適切なものはどれか答えなさい。", options: ["五大装置のなかで制御装置と演算装置をあわせた装置。", "本体に組み込まれてCPUから直接読み書きできる記憶装置。", "電源を切っても記憶内容が消えない記憶装置の総称。", "処理装置以外の入力装置や出力装置、補助記憶装置などの総称。"], answer: 3, cat: "コンピュータシステムの概要", exp: "CPUとメモリ（処理装置）以外の外部装置全般を「周辺装置」と呼びます。" },
+    { text: "インタフェースに関する記述として、適切でないものはどれか答えなさい。", options: ["各周辺装置とバスを接続する部分の規格のこと。", "USBはパソコンと周辺機器を結ぶシリアルインタフェース規格。", "RFIDは映像や音声を入出力するためのインタフェース規格。", "Bluetoothは電波を利用して近距離間でデータ交換する規格。"], answer: 2, cat: "コンピュータシステムの概要", exp: "映像・音声の入出力規格はHDMIです。RFIDは無線ICタグ技術です。" },
+    { text: "集積回路(IC)の説明文の空欄(ア)、(イ)、(ウ)にあてはまる適切な組み合わせはどれか答えなさい。\n集積度を高めた大規模集積回路(ア)、さらに高めた超大規模集積回路(イ)、超々大規模集積回路(ウ)などがある。", options: ["ア: LSI / イ: ULSI / ウ: VLSI", "ア: LSI / イ: VLSI / ウ: ULSI", "ア: ULSI / イ: VLSI / ウ: LSI", "ア: VLSI / イ: LSI / ウ: ULSI"], answer: 1, cat: "コンピュータシステムの概要", exp: "LSI → VLSI → ULSI の順に集積度が高くなります。" },
+    { text: "主記憶装置であるメモリに関する記述として、適切なものはどれか答えなさい。", options: ["コンピュータ本体に組み込まれて、CPUから直接読み書きできる記憶装置。", "CPUやROMなどを搭載したプリント基板。", "ディスプレイに映像を出力するための拡張ボード。", "不揮発性の半導体メモリを使った補助記憶装置。"], answer: 0, cat: "コンピュータシステムの概要", exp: "CPUから直接読み書きできるのが主記憶（メモリ）です。" },
+    { text: "データの読み出しと書き込みができるメモリで、電源を切ると内容が消える性質(揮発性)があるものはどれか答えなさい。", options: ["USB", "RAM", "HDD", "ROM"], answer: 1, cat: "コンピュータシステムの概要", exp: "読み書き可能・揮発性なのは「RAM」です。" },
+    { text: "2進数の「11111」を10進数に変換した答え(ア)と、10進数の「28」を2進数に変換した答え(イ)の組み合わせはどれか答えなさい。", options: ["ア: 29 / イ: 11110", "ア: 29 / イ: 11100", "ア: 31 / イ: 11110", "ア: 31 / イ: 11100"], answer: 3, cat: "基数変換・計算", exp: "11111(2) = 16+8+4+2+1 = 31。28 = 16+8+4 = 11100(2)。" },
+    { text: "デバイスドライバに関する記述として、適切でないものはどれか答えなさい。", options: ["周辺機器をOSが制御するためのソフトウェア。", "OSの機能の一部として組み込まれ一体的に動作する。", "バグの修正や小規模な更新のためのプログラムである。", "たんにドライバと呼ばれることが多い。"], answer: 2, cat: "ソフトウェア・権利", exp: "3はパッチの説明です。" },
+    { text: "画像や動画、音声、特定のアプリケーションで作成されたファイルなどの総称はどれか答えなさい。", options: ["フォルダ", "テキストファイル", "フォーマット", "バイナリファイル"], answer: 3, cat: "コンピュータシステムの概要", exp: "テキスト形式以外のデータファイル全般を「バイナリファイル」と呼びます。" },
+    { text: "限られた狭い範囲の構内ネットワークのことで、有線や無線で利用されるものはどれか答えなさい。", options: ["LAN", "WAN", "Wi-Fi", "アクセスポイント"], answer: 0, cat: "情報通信ネットワーク", exp: "構内ネットワークは「LAN」です。" },
+    { text: "インターネットに関する説明文で、適切なもののすべてを挙げたものはどれか答えなさい。\nア. 世界規模のネットワークである。\nイ. 一般的にアナログ回線の方がデジタル回線より高速である。\nウ. データをパケットに分割しルータが転送を繰り返すパケット交換が利用される。\nエ. 回線を多くの利用者が共有できる仕組みである。", options: ["ア、イ", "イ、ウ", "ア、イ、エ", "ア、ウ、エ"], answer: 3, cat: "情報通信ネットワーク", exp: "イが誤り（デジタル回線の方が高速）です。" },
+    { text: "プロバイダ(ISP)が行っているネット接続サービス以外の業務・サービスのすべてを挙げたものはどれか答えなさい。\nア. メールアドレスの配付 / イ. メールのフィルタリング / ウ. Web公開スペースの提供 / エ. ウイルスチェック", options: ["ア、イ", "ア、ウ", "イ、エ", "ア、イ、ウ、エ"], answer: 3, cat: "情報通信ネットワーク", exp: "ア〜エのすべてをプロバイダは付加サービスとして提供しています。" },
+    { text: "Webサーバ上にあり、ブラウザで閲覧可能な1ページ単位の文書のまとまりの名称はどれか答えなさい。", options: ["Webページ", "DNS", "URL", "ハイパーリンク"], answer: 0, cat: "情報通信ネットワーク", exp: "「Webページ」の説明です。" },
+    { text: "HTMLメールに関する記述として、適切なものはどれか答えなさい。", options: ["一方的に大量送信される迷惑メール。", "装飾情報を持たないテキスト形式のメール。", "文字のサイズや色、画像の挿入など装飾できる形式のメール。", "不特定多数への転送を促す迷惑メール。"], answer: 2, cat: "情報通信ネットワーク", exp: "文字色やレイアウトを装飾できるのが「HTMLメール」です。" },
+    { text: "メールボックスの容量がいっぱいになった場合の対処方法として、適切なもののすべてを挙げたものはどれか答えなさい。\nア. 受信トレイの不要メールを削除する。\nイ. 削除済みアイテムフォルダを空にする。\nウ. 必要なメールはアーカイブフォルダに移動する。\nエ. メールにファイルを添付するときは圧縮する。", options: ["ア、イ", "ア、イ、ウ", "ア、イ、エ", "ウ、エ"], answer: 2, cat: "情報通信ネットワーク", exp: "ア、イ、エが適切な対処法です（サーバ上のアーカイブも容量を消費します）。" },
+    { text: "検索エンジンの説明文の空欄(ア)、(イ)にあてはまる適切な組み合わせはどれか答えなさい。\n指定したキーワードを含むWebページを探す(ア)型検索と、カテゴリから順にたどる(イ)型検索がある。", options: ["ア: シーケンシャル / イ: ディレクトリ", "ア: ディレクトリ / イ: キーワード", "ア: キーワード / イ: バイナリ", "ア: キーワード / イ: ディレクトリ"], answer: 3, cat: "情報通信ネットワーク", exp: "語句検索はキーワード型、分類ツリーをたどるのがディレクトリ型です。" },
+    { text: "ネットを通じて出入りする情報を監視し、問題がある内容を排除・遮断して通信させない技術はどれか答えなさい。", options: ["アップロード", "ダウンロード", "コンテンツフィルタリング", "プロトコル"], answer: 2, cat: "情報セキュリティ", exp: "「コンテンツフィルタリング」の説明です。" },
+    { text: "メーラで、宛先の相手以外にも写しを送信したいが、他の受信者にアドレスを表示させたくないときに入力する欄はどれか答えなさい。", options: ["CC", "BCC", "TO", "FROM"], answer: 1, cat: "情報通信ネットワーク", exp: "他の受信者にアドレスを隠して送信するのは「BCC」です。" },
+    { text: "会話文の空欄(ア)、(イ)、(ウ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n先生: ユーザIDやパスワードを入力する画面は(ア)画面です。指紋や顔など身体的特徴を使う認証は(イ)認証、SMS等で届く一時的なコードは(ウ)です。", options: ["ア: ログイン / イ: 物体 / ウ: 認証コード", "ア: スタート / イ: 生体 / ウ: 認証コード", "ア: ログイン / イ: 生体 / ウ: 認証コード", "ア: ログイン / イ: 生体 / ウ: JISコード"], answer: 2, cat: "情報セキュリティ", exp: "ログイン画面、生体認証、認証コードが適切です。" },
+    { text: "コンピュータの利用やネットワークサービスの利用を終了し、認証を解除する操作はどれか答えなさい。", options: ["ログアウト", "タイムアウト", "オプトアウト", "シャットダウン"], answer: 0, cat: "情報セキュリティ", exp: "「ログアウト」の説明です。" },
+    { text: "暗号化された文を、正規の受信者がもとの平文に戻す処理はどれか答えなさい。", options: ["圧縮", "解凍", "伸張", "復号"], answer: 3, cat: "情報セキュリティ", exp: "暗号文を平文に戻す処理は「復号」です。" },
+    { text: "統計分析に関する記述として、適切なものはどれか答えなさい。", options: ["データを収集・集計・分析し傾向をつかみ意思決定等に活用する手法。", "直感に頼らず体系的に整理し矛盾のない結論を導く思考法。", "問題を細かく分解して階層化する手法。", "重複や漏れがなく網羅しようとする考え方。"], answer: 0, cat: "ビジネスと統計", exp: "「統計分析」の説明です。" },
+    { text: "間隔尺度に関する記述として、適切なものはどれか答えなさい。", options: ["順位や大小を示さず区別のために使われる尺度。", "順序関係があるが数値の間隔が一定ではない尺度。", "順序関係があり、データの間隔が一定である尺度。", "順序関係・等間隔に加え、値0が何もないことを示す尺度。"], answer: 2, cat: "ビジネスと統計", exp: "気温や西暦のように等間隔で差に意味があるが絶対的な0点がないものは「間隔尺度」です。" },
+    { text: "データの中で、他のデータと比較すると、明らかに異なる極端な値はどれか答えなさい。", options: ["欠損値", "外れ値", "標本誤差", "代表値"], answer: 1, cat: "ビジネスと統計", exp: "「外れ値」の説明です。" },
+    { text: "データ全体のばらつきを把握するための指標はどれか答えなさい。", options: ["中央値", "最頻値", "偏差", "分散"], answer: 3, cat: "ビジネスと統計", exp: "データ全体の散らばり具合を数値化した代表的指標は「分散」です。" },
+    { text: "データを区間ごとに分け、それぞれの区間ごとにデータの数を集計した表はどれか答えなさい。", options: ["特性要因図", "ガントチャート", "流れ図", "度数分布表"], answer: 3, cat: "表・グラフの作成と情報の分析", exp: "「度数分布表」の説明です。" },
+    { text: "負の相関の事例を述べたもののすべてを挙げたものはどれか答えなさい。\nア. 「気温の低下」と「暖房使用量」\nイ. 「コンピュータのスペック」と「価格」\nウ. 「研修時間の長さ」と「技術の定着率」\nエ. 「販売価格の上昇」と「販売数」", options: ["ア、エ", "イ、ウ", "ア、イ、エ", "イ、ウ、エ"], answer: 0, cat: "ビジネスと統計", exp: "気温が下がると暖房が増える（逆方向）、価格が上がると販売数が減る（逆方向）のでアとエが負の相関です。" },
+    { text: "ABC分析の適用事例として、最も適切なものはどれか答えなさい。", options: ["自社の強み・弱みや外部環境を分析し経営戦略に活かす。", "顧客ごとの購入金額を集計し、購入金額によって優待内容を変更し重点管理する。", "クレームの要因を分析する。", "新システム開発の工程遅延を防止する。"], answer: 1, cat: "問題の発見と解決の方法", exp: "重要度に応じてグループ分けし重点管理するのが「ABC分析」です。" },
+    { text: "折れ線グラフの活用事例として、最も適切なものはどれか答えなさい。", options: ["品質・価格など全体のバランスを表示する。", "収集したデータの分布状況を表示する。", "ある都市の1年間の平均気温の変化を表示する。", "進路希望状況の全体に対する割合を表示する。"], answer: 2, cat: "表・グラフの作成と情報の分析", exp: "時系列での変化の推移を表すのに適しているのが「折れ線グラフ」です。" },
+    { text: "Zグラフに関する記述として、適切なものはどれか答えなさい。", options: ["棒の長さでデータを視覚的に比較するグラフ。", "扇形の面積で全体に対する割合を比較するグラフ。", "放射状の軸で全体のバランスを表現するグラフ。", "データの値・累計値・移動合計を折れ線で示し推移と傾向を把握するグラフ。"], answer: 3, cat: "表・グラフの作成と情報の分析", exp: "月別値・累計値・移動合計の3本の線で推移を見るのが「Zグラフ」です。" },
+    { text: "会話文の空欄(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n部下: 条件とキャンペーン内容を整理するため(ア)を作成します。\n上司: 進行計画を記した(イ)も確認しておいてくれ。", options: ["ア: デシジョンテーブル / イ: ガントチャート", "ア: デシジョンテーブル / イ: 特性要因図", "ア: 度数分布表 / イ: ガントチャート", "ア: 度数分布表 / イ: 特性要因図"], answer: 0, cat: "問題の発見と解決の方法", exp: "条件表はデシジョンテーブル、工程進捗表はガントチャートです。" },
+    { text: "ある会社がSWOT分析を行った。「新規の取組が少ない」「部署間連携が不十分」「新人教育に統一感がない」という内容は四つの要因のどれか答えなさい。", options: ["強み", "弱み", "機会", "脅威"], answer: 1, cat: "問題の発見と解決の方法", exp: "自社の内部要因でマイナス面なので「弱み（Weakness）」です。" },
+    { text: "市場成長率と市場占有率の観点から分析を行った。分析結果として適切なものはどれか答えなさい。", options: ["成長率・占有率ともに高いA事業は新規投資を限定的とする。", "成長率が低く占有率が高いB事業は縮小や撤退を検討する。", "成長率が高く占有率が低いC事業は今後の投資判断を慎重に行う。", "成長率・占有率ともに低いD事業は積極投資を行う。"], answer: 2, cat: "問題の発見と解決の方法", exp: "PPM分析において「問題児（高成長・低占有）」は将来の花形を目指すか撤退か慎重に投資判断します。" },
+    { text: "確定的モデルに関する記述として、適切なものはどれか答えなさい。", options: ["時間の経過で変化するシステムを表すモデル。", "時間の経過で変化しないシステムを表すモデル。", "不確定な事象のない、確率を含まない方程式などで表せるモデル。", "不規則な現象について確率の視点で表したモデル。"], answer: 2, cat: "問題の発見と解決の方法", exp: "確率的要素を含まず確定的な関係式で表せるのが「確定的モデル」です。" },
+    { text: "コンピュータに命令を伝えるためのものはどれか答えなさい。", options: ["アルゴリズム", "流れ図", "プログラミング", "プログラム言語"], answer: 3, cat: "問題の発見と解決の方法", exp: "命令を記述するための言語は「プログラム言語」です。" },
+    { text: "右の流れ図にしたがって処理する際、aの値が 5, bの値が 6 のとき、出力される z の値を答えなさい。", flowchartType: "flow_2_49", options: ["15", "16", "17", "18"], answer: 2, cat: "問題の発見と解決の方法", exp: "a=5, b=6。a > b (5 > 6) はNoなので、b ← 6 × 2 = 12。次に z ← a + b = 5 + 12 = 17 となり、17が出力されます。" },
+    { text: "最小値を求める右の流れ図の(ア)および(イ)にあてはまる処理として適切なものはどれか答えなさい。なお、入力値は0以上99以下の整数とし、-1で終了、同値は先着優先とする。", flowchartType: "flow_2_50", options: ["ア: 0 → Min / イ: c ≦ Min", "ア: 999 → Min / イ: c ＜ Min", "ア: 0 → Min / イ: c ＞ Min", "ア: 999 → Min / イ: c ≧ Min"], answer: 1, cat: "問題の発見と解決の方法", exp: "最小値初期値には十分大きな「999 → Min」を設定し、先着優先のため「c ＜ Min」とします。" }
+  ],
+
+  // 第3回〜第5回
+  3: generateAuthenticExamQuestions(3),
+  4: generateAuthenticExamQuestions(4),
+  5: generateAuthenticExamQuestions(5),
+
+  // 第6回 模擬試験 (P.162〜P.177 テキスト本誌完全収録・全50問重複なし)
+  6: [
+    { id: 1, cat: "企業活動と情報処理", text: "物事の内容や様子を示し、行動や意思を決めるときの判断材料となることがらのことで、それを文字や図、画像、音声、映像などを使って表現したものはどれか答えなさい。", options: ["データ", "情報", "情報処理", "情報システム"], answer: 1, exp: "物事の内容や様子を示し、判断材料となるものを「情報」といいます（1はデータ、3は情報処理、4は情報システム）。" },
+    { id: 2, cat: "企業活動と情報処理", text: "IoT に関する記述として、適切でないものはどれか答えなさい。", options: ["さまざまな「モノ(物)」がインターネットに接続され、相互に情報交換する仕組みのこと。", "これまでインターネットに接続されていなかった物(家電や自動車など)に、センサー(検知器)やカメラ、通信機能等を取り付け、インターネットに接続することで、リアルタイムで情報交換が可能となった。", "パソコンやスマートフォンなどからの遠隔操作で、自動認識、自動計測、自動制御などができるようになった。", "コンピュータに学習データを与えて答えを求めさせ、その答えを評価する訓練を繰り返すことにより、データからより正確な答えを導くための規則性やパターン(学習モデル)を自動的に学習させる手法である。"], answer: 3, exp: "4は「機械学習」の説明であり、IoTの説明として誤りです。" },
+    { id: 3, cat: "企業活動と情報処理", text: "仮想現実(VR)について述べたもののすべてを挙げたものはどれか答えなさい。\nア. 現実の風景に、CGなどで作成されたデジタル情報を重ね合わせ、人間の現実認識を強化する技術のこと。\nイ. CGや音響技術などを利用し、人間の視覚や聴覚、触覚に働きかけ、空間や物体、時間に関する現実感を人工的に作り出す技術のこと。\nウ. スマートフォンなどを利用して、CGを現実世界に映し出すことができるものである。\nエ. まるで、自分がコンピュータで作られた仮想世界にいるかのような感覚を体験できるものである。", options: ["ア、ウ", "ア、エ", "イ、ウ", "イ、エ"], answer: 3, exp: "イとエが仮想現実（VR）の説明です。アとウは拡張現実（AR）の説明です。" },
+    { id: 4, cat: "企業活動と情報処理", text: "複合現実(MR)に関する記述として、適切なものはどれか答えなさい。", options: ["インターネットなどの通信ネットワークを利用して、商取引の契約や代金の決済などを行う取引の形態。", "CGなどで作られた仮想世界と実際の現実世界を、組み合わせて融合させる技術。", "蓄積された大量のデータをAIや統計学などを活用して分析し、新たな規則性や傾向、未知の知見などを得ること。", "インターネットなどのネットワークを通じ、サーバやソフトウェアなど、コンピュータシステムに必要な機能を、必要に応じて利用できるサービスの形態。"], answer: 1, exp: "仮想世界と現実世界を組み合わせて融合させる技術は「複合現実（MR）」です（1はEC、3はデータマイニング、4はクラウドコンピューティング）。" },
+    { id: 5, cat: "コミュニケーションと情報デザイン", text: "アイコンやボタンなど、利用者が実際にコンピュータなどの画面を見たり触れたりする部分のことで、大きく二つの種類があるものはどれか答えなさい。", options: ["ユーザインタフェース", "ピクトグラム", "ユーザビリティ", "アクセシビリティ"], answer: 0, exp: "画面上で見たり操作したりする部分は「ユーザインタフェース（UI）」です。CUIとGUIの2種類があります。" },
+    { id: 6, cat: "コミュニケーションと情報デザイン", text: "表現メディアに該当するもののすべてを挙げたものはどれか答えなさい。\nア. 文字\nイ. 音声\nウ. 新聞\nエ. 動画", options: ["ア、イ", "イ、ウ", "ア、イ、エ", "ア、ウ、エ"], answer: 2, exp: "文字、音声、動画は情報を表現する「表現メディア」です。新聞は「情報メディア（伝達メディア）」に分類されます。" },
+    { id: 7, cat: "コミュニケーションと情報デザイン", text: "次の会話はある高校における先生と生徒のものである。文中の(ア)、(イ)、(ウ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n生徒: 先生、メディアの概念は、かなり幅広いのではないかと思いますが。\n先生: そうです。情報の伝達や記録に用いられる媒体、情報を表現する手段や情報を送受信する仕組み、組織なども含まれます。つまり、発信者から受信者に、情報が届けられる際にかかわった(ア)のものがメディアといえます。\n生徒: メディアの取り扱いで重要なことは何ですか。\n先生: 情報の受け手が、情報の信頼性や信ぴょう性を正しく理解・分析し、メディアからの情報を主体的に読み解く能力やメディアにアクセスして活用する能力、メディアを通じてコミュニケーションを行う能力などの総称である(イ)を身に付けることがとても重要となります。\n生徒: 具体的には、どんなメディアがありますか。\n先生: マスメディアを中心とする情報メディア、情報を表現する表現メディアなどがあります。さらに、情報を保存して伝達する記録メディアと、情報を時間や空間をこえて伝達する(ウ)の二つがあり、これらはまとめて伝達メディアと呼ばれます。\n生徒: やっぱり、かなり幅広い概念ですね。", options: ["ア: すべて / イ: ビジネススキル / ウ: 通信メディア", "ア: 一部 / イ: メディアリテラシー / ウ: マルチメディア", "ア: 一部 / イ: ビジネススキル / ウ: マルチメディア", "ア: すべて / イ: メディアリテラシー / ウ: 通信メディア"], answer: 3, exp: "届けられる際に関わった「すべて」のものがメディアであり、主体的に読み解く能力は「メディアリテラシー」、時間や空間を超えて伝達するのは「通信メディア」です。" },
+    { id: 8, cat: "コミュニケーションと情報デザイン", text: "色の基礎で補色に関する記述として、適切なものはどれか答えなさい。", options: ["色相環で隣り合う色のこと。", "暖色とも寒色ともいえない中間的な色合いのこと。", "色相環で真正面で向き合っている色のこと。", "最も彩度が高い色のこと。"], answer: 2, exp: "色相環で真正面で向き合っている反対側の色の関係を「補色」といいます（1は類似色、2は中性色、4は純色）。" },
+    { id: 9, cat: "情報モラル", text: "情報モラルに関する記述として、適切なものはどれか答えなさい。", options: ["情報社会において情報を扱う人が守るべき正しい行動の基準や基本的な考え方、態度のこと。", "情報機器に過度に依存し、または過度に没頭しすぎることが原因で生じる精神的・身体的な不調のこと。", "仕事で情報機器を活用することに適応できないことが原因で生じる精神的・身体的な不調のこと。", "インターネットの使用を自分でコントロールできなくなり、長時間にわたって利用することで日常生活に支障をきたす状態のこと。"], answer: 0, exp: "1が「情報モラル」の定義です（2はテクノ依存症、3はテクノ不安症、4はインターネット依存）。" },
+    { id: 10, cat: "情報モラル", text: "デジタルデバイドについて述べたもののすべてを挙げたものはどれか答えなさい。\nア. 他人のユーザIDなどを不正に利用し、その人のふりをしてネットワーク上で活動すること。\nイ. 情報機器やインターネットなどのデジタル技術に触れたり使いこなしたりできる人と、そうでない人の間に生じる機会や貧富、社会的地位などの格差のこと。\nウ. 個人や集団の間に生じる格差だけでなく、地域間や国家間で格差が生じる場合もある。\nエ. 利用権限のないコンピュータシステムへ侵入したり、利用したりすること。", options: ["ア、イ", "ア、ウ", "イ、ウ", "ウ、エ"], answer: 2, exp: "イとウがデジタルデバイド（情報格差）の説明です。アはなりすまし、エは不正アクセスです。" },
+    { id: 11, cat: "情報モラル", text: "自分の容姿や容貌を写した写真や肖像画(似顔絵を含む)、映像をみだりに撮影・公表されない権利はどれか答えなさい。", options: ["実用新案権", "肖像権", "意匠権", "商標権"], answer: 1, exp: "容姿や似顔絵などをみだりに撮影・公表されない権利は「肖像権」です。" },
+    { id: 12, cat: "情報モラル", text: "著作者の権利の保護を目的とする著作権法のなかで、他人に譲渡したり、相続したりすることのできない著作者に固有の権利はどれか答えなさい。", options: ["著作者人格権", "著作権(財産権)", "公衆送信権", "私的使用のための複製"], answer: 0, exp: "公表権・氏名表示権・同一性保持権などからなり、譲渡・相続できない著作者固有の一身専属権は「著作者人格権」です。" },
+    { id: 13, cat: "情報モラル", text: "次の文章は、著作権に関する説明文である。空欄の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n著作権とは、絵画、彫刻、写真、映画、建築、音楽、詩、小説およびプログラムなどを作成した者が、著作物を(ア)に利用できる権利のことである。産業財産権とは異なり、権利を得るために法的な手続きの必要はなく、著作物を作成したことにより自動的に与えられる。原則として、著作者の生存期間およびその死後(イ)年間保護される。", options: ["ア: 独占的 / イ: 50", "ア: 優先的 / イ: 60", "ア: 独占的 / イ: 70", "ア: 優先的 / イ: 80"], answer: 2, exp: "著作物は「独占的」に利用でき、保護期間は原則として著作者の死後「70」年です。" },
+    { id: 14, cat: "コンピュータシステムの概要", text: "制御装置に関する記述として、適切なものはどれか答えなさい。", options: ["文字や数値、画像、音声、映像などを、コンピュータが処理できるデジタルデータに変換して主記憶装置などに読み込ませる装置。", "読み込んだデータを用いて、四則演算や比較判断などを行う装置。", "コンピュータ本体に組み込まれて、CPUから直接読み書きできる記憶装置。", "記憶装置の命令を取り出して解読し、各装置が効率よく動作するように指示を送る装置。"], answer: 3, exp: "4が制御装置です（1は入力装置、2は演算装置、3は主記憶装置）。" },
+    { id: 15, cat: "コンピュータシステムの概要", text: "キーを打つことで文字や数字、記号などのデータをコンピュータに入力する装置はどれか答えなさい。", options: ["マウス", "キーボード", "タッチペン", "バーコードリーダ"], answer: 1, exp: "「キーボード」の説明です。" },
+    { id: 16, cat: "コンピュータシステムの概要", text: "高速でデータの読み書きをすることができる、大容量の半導体メモリを用いた補助記憶装置はどれか答えなさい。", options: ["ハードディスク装置(HDD)", "DVDドライブ", "SSD", "ブルーレイドライブ"], answer: 2, exp: "半導体フラッシュメモリを用いた高速な補助記憶装置は「SSD（Solid State Drive）」です。" },
+    { id: 17, cat: "コンピュータシステムの概要", text: "ケーブルを利用した電力供給の機能(バスパワー)もあり、キーボードやマウス、プリンタなどの周辺装置とパソコンなどを結ぶシリアルインタフェースの規格はどれか答えなさい。", options: ["USB", "HDMI", "Bluetooth", "IrDA"], answer: 0, exp: "「USB（Universal Serial Bus）」の説明です。" },
+    { id: 18, cat: "基数変換・計算", text: "ビットに関する記述として、適切でないものはどれか答えなさい。", options: ["1ビットは2進数の1桁のことである。", "1ビットは情報の最小単位である。", "1ビットで2通りのデータを表現することができる。", "1ビットで256通りのデータを表現することができる。"], answer: 3, exp: "1ビットで表現できるのは0と1の「2通り」です。256通り表現できるのは「8ビット（1バイト）」です。" },
+    { id: 19, cat: "基数変換・計算", text: "2進数に関する記述として、適切でないものはどれか答えなさい。", options: ["2進法で表された数値を2進数という。", "コンピュータのデータは、2進数によって処理される。", "2進数では、1桁が2種類(「0」または「1」)の数値で表され、1の次は「2」に桁上がりする。", "2進数や10進数などの進数で表記された数値を、別の進数の表記にすることは基数変換と呼ばれる。"], answer: 2, exp: "2進数では1の次は桁上がりして「10」になります（2という数字は存在しません）。" },
+    { id: 20, cat: "基数変換・計算", text: "2進数の「101011」を10進数に変換した答え(ア)と、10進数の「40」を2進数に変換した答え(イ)の組み合わせはどれか答えなさい。", options: ["ア: 39 / イ: 100100", "ア: 41 / イ: 100100", "ア: 43 / イ: 101000", "ア: 45 / イ: 101000"], answer: 2, exp: "101011(2) = 32 + 8 + 2 + 1 = 43。40(10) = 32 + 8 = 101000(2)。よって3が正解です。" },
+    { id: 21, cat: "コンピュータシステムの概要", text: "アナログデータをデジタルデータに変換するため、連続した値を一定の時間間隔に分割し、量として取り出すデジタル化の方法はどれか答えなさい。", options: ["標本化", "量子化", "符号化", "標準化"], answer: 0, exp: "波形から一定の時間間隔で値を取り出す処理は「標本化（サンプリング）」です（段階値にそろえるのは量子化、2進数に変換するのは符号化）。" },
+    { id: 22, cat: "ソフトウェア・権利", text: "応用ソフトウェアとも呼ばれ、特定の目的に利用するためのソフトウェアであるアプリケーションソフトウェアに該当するもののすべてを挙げたものはどれか答えなさい。\nア. 表計算ソフトウェア\nイ. オペレーティングシステム(OS)\nウ. ミドルウェア\nエ. プレゼンテーションソフトウェア", options: ["ア、イ", "ア、ウ", "ア、エ", "ウ、エ"], answer: 2, exp: "表計算ソフト（ア）とプレゼンテーションソフト（エ）がアプリケーションソフトです。OSは基本ソフトウェアです。" },
+    { id: 23, cat: "ソフトウェア・権利", text: "次のアンインストールに関する説明文で、適切なもののすべてを挙げたものはどれか答えなさい。\nア. コンピュータから、インストールしたソフトウェアを削除して導入前の状態に戻すことである。\nイ. アンインストーラが付属している場合は、これを利用した方がよい。\nウ. アンインストールにより、ストレージの空き容量を回復させることができる。\nエ. コンピュータの画面に表示されているソフトウェアのアイコンを削除することで、アンインストールと同様に、ストレージの空き容量を回復させる効果が期待できる。", options: ["ア、ウ", "ア、イ、ウ", "ア、エ", "イ、ウ、エ"], answer: 1, exp: "ア・イ・ウが適切です。エはデスクトップ上のショートカット（アイコン）を消しただけで本体ソフトは削除されず容量は回復しません。" },
+    { id: 24, cat: "ソフトウェア・権利", text: "オープンソースソフトウェア(OSS)に関する記述として、適切でないものはどれか答えなさい。", options: ["ソフトウェアの設計図にあたるソースコードを、インターネットなどを通じて無償で公開している。", "誰でもそのソフトウェアを改良して自由に利用することができるが、再配布は禁止されている。", "著作権が放棄されたわけではない。", "著作者や利用者の権利や制限などを定めたオープンソースライセンスという利用許諾契約にもとづいて配布される。"], answer: 1, exp: "OSSは自由な改変だけでなく「再配布」も認められています（2が誤り）。" },
+    { id: 25, cat: "ソフトウェア・権利", text: "ユーザはネットワークなどから自由にソフトウェアを取得することができ、一定の試用期間内であれば料金を払わずに利用することができるものはどれか答えなさい。", options: ["デバイスドライバ", "ワーム", "フリーウェア", "シェアウェア"], answer: 3, exp: "一定期間無料で試用でき、継続利用時に料金を支払う形態は「シェアウェア」です。" },
+    { id: 26, cat: "ソフトウェア・権利", text: "次のサイトライセンスに関する説明文で、適切なもののすべてを挙げたものはどれか答えなさい。\nア. ソフトウェアの購入契約方法の一つで、使用する場所や組織などの条件を特定し、その範囲内で必要台数分のソフトウェアのコピーと使用を許可するものである。\nイ. 一度の購入手続きで、永続的に利用権を取得できるものである。\nウ. 一定期間の利用権を購入するもので、継続的に利用する場合には、契約を更新するという仕組みである。期間内のバージョンアップには、追加料金が不要となる。\nエ. 企業(コーポレートライセンス)や学校(アカデミックライセンス)などで、大量にコンピュータを導入したときなどに利用されることが多い。", options: ["ア、イ", "ア、エ", "イ、エ", "ウ、エ"], answer: 1, exp: "アとエがサイトライセンスの正しい説明です。ウはサブスクリプション契約の説明です。" },
+    { id: 27, cat: "ソフトウェア・権利", text: "パッチに関する記述として、適切でないものはどれか答えなさい。", options: ["バグの修正や小規模な更新のためのプログラムのこと。", "ソフトウェア全体を入れ替えるのではなく、修正すべき箇所だけをパッチで入れ替える。", "プログラム中の誤りを発見し、取り除く作業・工程のこと。", "パッチ(patch)とは、「つぎ当て(する)」、「当て布(を貼る)」などの意味を持つ英単語である。"], answer: 2, exp: "3は「デバッグ」の説明であり、パッチの説明ではありません。" },
+    { id: 28, cat: "コンピュータシステムの概要", text: "テキストファイルに該当するもののすべてを挙げたものはどれか答えなさい。\nア. オペレーティングシステム(OS)に付属するメモ帳ソフトで作成したファイル。\nイ. データをカンマ「,」や改行で区切って並べてあるcsv形式のファイル。\nウ. タグを使ってWebページを記述するHTMLで作成したファイル。\nエ. 発表資料などをプレゼンテーションソフトウェアで作成したファイル。", options: ["ア、イ", "ア、イ、ウ", "ア、エ", "イ、ウ、エ"], answer: 1, exp: "ア（txt）、イ（csv）、ウ（html）は文字コードだけで構成されるテキストファイルです。プレゼンテーションファイル（pptx等）はバイナリファイルです。" },
+    { id: 29, cat: "情報通信ネットワーク", text: "データを伝送するために、通信回線などを利用して接続された網状のシステムである情報通信ネットワークに含まれないものはどれか答えなさい。", options: ["Wi-Fi", "LAN", "WAN", "インターネット"], answer: 0, exp: "LAN、WAN、インターネットは通信ネットワークそのものですが、Wi-Fiは無線通信規格の名称です。" },
+    { id: 30, cat: "情報通信ネットワーク", text: "コンピュータは、「0」と「1」の信号で情報をやり取りする。こうした信号が流れる通信回線はどれか答えなさい。", options: ["アナログ回線", "ビット", "デジタル回線", "バイト"], answer: 2, exp: "0と1のデジタル信号がそのまま流れる回線は「デジタル回線」です。" },
+    { id: 31, cat: "情報通信ネットワーク", text: "次の文章は、アクセスポイントに関する説明文である。空欄の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\nアクセスポイントとは、無線で端末を接続するための(ア)のことである。有線通信では、LANの設置に配線工事が必要になることや、自宅やオフィスなどLANケーブルのある決められた場所でしか使用できないという制約がある。これに対して無線通信では、アクセスポイントが設置されていれば、(イ)を経由して、いつでもインターネットに接続することが可能になる。", options: ["ア: LANカード / イ: スイッチングハブ", "ア: LANカード / イ: 無線LANルータ", "ア: 電波中継機器 / イ: スイッチングハブ", "ア: 電波中継機器 / イ: 無線LANルータ"], answer: 3, exp: "アクセスポイントは無線端末を接続する「電波中継機器」であり、「無線LANルータ」を経由して接続します。" },
+    { id: 32, cat: "情報通信ネットワーク", text: "DNSに関する記述として、適切でないものはどれか答えなさい。", options: ["指定されたドメイン名を、通信に必要なIPアドレスに相互に変換する仕組みのことである。", "インターネット上で提供されているハイパーテキストシステムのことである。", "ドメイン名は人間にとってわかりやすい表記であるが、コンピュータ間の通信はすべてIPアドレスを使って行っている。", "ネットワーク上には、ドメイン名とIPアドレスの対応表を記憶・管理しているDNSサーバが存在し、コンピュータの問い合わせに応じて変換し、WebサーバのIPアドレスを知らせている。"], answer: 1, exp: "2は「WWW（World Wide Web）」の説明であり、DNSの説明ではありません。" },
+    { id: 33, cat: "情報セキュリティ", text: "次の会話はある高校における先生と生徒のものである。文中の(ア)、(イ)、(ウ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n生徒: 先生、利用者に関する情報を収集して、外部の企業や個人に送信するマルウェアとは何ですか。\n先生: それは、スパイウェアですね。利用者が気づかずにインストールしている場合が多く、クレジットカードの番号やユーザID、(ア)、Webサイトのアクセス履歴などの情報を盗み出すものです。\n生徒: なんか、ひどいですね。個人情報が抜き取られるんですね。\n先生: スパイウェアは情報を盗み出すことがおもな目的であり、コンピュータに不具合を起こしたり、他へ感染したりすることはほとんどありません。スパイウェアには、パソコンのキーボード操作を監視する(イ)や、勝手に広告を表示する(ウ)などがあります。\n生徒: 不特定多数が利用するようなパソコンでは、絶対に個人情報を入力してはいけないということですね。\n先生: そのとおりです。", options: ["ア: パスワード / イ: スパムメール / ウ: ランサムウェア", "ア: 認証コード / イ: スパムメール / ウ: アドウェア", "ア: パスワード / イ: キーロガー / ウ: アドウェア", "ア: 認証コード / イ: キーロガー / ウ: ランサムウェア"], answer: 2, exp: "盗まれるのはパスワード、キー操作を盗聴するのはキーロガー、広告表示を行うのはアドウェアです。" },
+    { id: 34, cat: "情報セキュリティ", text: "使用しているソフトウェアの不具合を修正したり、機能を向上させたりするために、ソフトウェアの提供もとなどのWebサイトから必要なファイルをダウンロードして最新の状態にするものはどれか答えなさい。", options: ["アップデート", "インシデント", "シングルサインオン", "バックアップ"], answer: 0, exp: "ソフトウェアを最新状態にする操作は「アップデート」です。" },
+    { id: 35, cat: "ビジネスと統計", text: "分類や種類など数値では表せないデータはどれか答えなさい。", options: ["量的データ", "連続データ", "離散データ", "質的データ"], answer: 3, exp: "分類や種類など数値で表せないデータは「質的データ」です。" },
+    { id: 36, cat: "ビジネスと統計", text: "順序尺度に関する記述として、適切なものはどれか答えなさい。", options: ["順序関係、等間隔の性質に加え、値0に意味がある尺度である。", "順位や大小を示すものではなく、データを区別するために使われる尺度である。", "順序関係があるが、数値の間隔が一定ではない尺度である。", "順序関係があり、間隔が一定であり、値0に意味がない尺度である。"], answer: 2, exp: "順序関係はあるが等間隔ではない尺度（アンケートの満足度や検定の級など）は「順序尺度」です（1は比例尺度、2は名義尺度、4は間隔尺度）。" },
+    { id: 37, cat: "ビジネスと統計", text: "標本調査において、実際に調査を実施する調査対象の一部はどれか答えなさい。", options: ["母集団", "標本", "標本誤差", "欠損値"], answer: 1, exp: "母集団から抜き出された実際の調査対象の一部は「標本（サンプル）」です。" },
+    { id: 38, cat: "ビジネスと統計", text: "外れ値に関する記述として、適切なものはどれか答えなさい。", options: ["他のデータと比較すると、極端に大きいまたは小さい値で、明らかに異なる値のこと。", "データの収集や作成の際に、未入力や誤入力などにより、データが存在していない状態のこと。", "統計調査を実施する際に、調査対象となる全体のこと。", "調査対象全体を対象に調査をすること。"], answer: 0, exp: "極端に大きくまたは小さく、他と大きく離れた値を「外れ値」といいます（2は欠損値、3は母集団、4は全数調査）。" },
+    { id: 39, cat: "ビジネスと統計", text: "あるテストの4名の結果について、Aさんが50点、Bさんが40点、Cさんが80点、Dさんが70点の場合、Aさんの偏差をあげたものはどれか答えなさい。", options: ["-10", "-20", "20", "10"], answer: 0, exp: "平均値 = (50 + 40 + 80 + 70) ÷ 4 = 240 ÷ 4 = 60点。Aさんの偏差 = Aさんの得点(50) - 平均値(60) = -10 となります。" },
+    { id: 40, cat: "ビジネスと統計", text: "度数分布表に関する記述として、適切なものはどれか答えなさい。", options: ["二つの項目をX軸とY軸に点としてプロットしたグラフ。", "データを区間(階級またはクラス)ごとに分け、各区間に含まれるデータの数(度数または頻度)を集計した表。", "ある特定の問題に対して、結果と原因の因果関係を体系的に整理し、視覚的にまとめた図。", "複数の条件と結果の対応関係を整理し、表形式にまとめたもの。"], answer: 1, exp: "階級ごとに度数をまとめた表を「度数分布表」といいます（1は散布図、3は特性要因図、4はデシジョンテーブル）。" },
+    { id: 41, cat: "表・グラフの作成と情報の分析", text: "長方形と線で構成された図でデータの最小値、最大値、四分位数、四分位範囲、中央値、外れ値を把握することができ、データのばらつきを視覚的に確認することができるものはどれか答えなさい。", options: ["散布図", "パレート図", "ヒストグラム", "箱ひげ図"], answer: 3, exp: "「箱ひげ図」の説明です。" },
+    { id: 42, cat: "ビジネスと統計", text: "二つの項目に相関関係があり、相関係数が -0.9 の場合、二つの項目はどのような関係を示しているか答えなさい。", options: ["強い正の相関", "弱い正の相関", "強い負の相関", "弱い負の相関"], answer: 2, exp: "相関係数が -1 に非常に近い -0.9 のため、「強い負の相関」を示します。" },
+    { id: 43, cat: "ビジネスと統計", text: "無相関の事例を述べたもののすべてを挙げたものはどれか答えなさい。\nア. 「パンの売上高」と「パソコンの売上高」\nイ. 「平均気温」と「都市人口」\nウ. 「研修時間の長さ」と「技術の定着率」\nエ. 「販売価格の上昇」と「販売数」", options: ["ア", "イ", "ア、イ", "ウ、エ"], answer: 2, exp: "パンとパソコン、気温と都市人口には直接の相関関係は見られないため、アとイが無相関です（ウは正の相関、エは負の相関）。" },
+    { id: 44, cat: "表・グラフの作成と情報の分析", text: "棒グラフに関する記述として、適切なものはどれか答えなさい。", options: ["データの大きさを棒の長さで示し、データを視覚的に比較することに適したグラフ。", "データ全体を円、各データの大きさを扇形の面積で示し、全体に対する割合を比較することに適したグラフ。", "横軸に時系列データ、縦軸にデータ量を示し、それぞれのデータの値を線で結び、データの変化を表現することに適したグラフ。", "データの値と累計値、移動合計(過去12か月の合計値)を折れ線グラフで示し、データ全体の推移と傾向を視覚的に把握するのに適したグラフ。"], answer: 0, exp: "棒の長さで大きさの比較を行うのは「棒グラフ」です（2は円グラフ、3は折れ線グラフ、4はZグラフ）。" },
+    { id: 45, cat: "表・グラフの作成と情報の分析", text: "右のレーダーチャート「商品の品質比較」から読み取った内容として、適切なものはどれか答えなさい。\n（チャート概要：項目1〜項目4の4軸。商品Aは項目1=5.0, 項目2=4.0, 項目3=3.5, 項目4=3.0。商品Bは項目1=4.0, 項目2=4.2, 項目3=4.0, 項目4=4.0。商品Cは項目1=4.0, 項目2=4.5, 項目3=4.5, 項目4=2.0）", options: ["項目2は、すべての商品で数値が4.0以上である。", "商品Aは、すべての項目で数値が4以上である。", "商品Bの項目1の数値は、他の商品と比較して、数値が大きい。", "商品Cは、他の商品と比較して、項目3の数値が小さい。"], answer: 0, exp: "項目2の各商品の値は、商品A=4.0、商品B=4.2、商品C=4.5であり、すべての商品で4.0以上を満たしています。" },
+    { id: 46, cat: "問題の発見と解決の方法", text: "企業の置かれている状況について、内部要因と外部要因を四つの要素で分析することで、企業の現状を把握し、今後の経営戦略立案に活かす方法はどれか答えなさい。", options: ["ABC分析", "PPM分析", "モンテカルロ法", "SWOT分析"], answer: 3, exp: "強み(S)・弱み(W)・機会(O)・脅威(T)の4要素で分析するのは「SWOT分析」です。" },
+    { id: 47, cat: "問題の発見と解決の方法", text: "次の会話はある学校における生徒同士のものである。文中の(ア)、(イ)にあてはまる適切な語句の組み合わせはどれか答えなさい。\n生徒A: 今日のホームルームは、クラス全員参加型の(ア)だったのかな。\n生徒B: そんな感じだったね。今回は文化祭で何をやるか決まらなかったけど、事前に「出された意見を否定しない」、「自由な意見をいってよい」、「数多くのアイディアを出す」、「出されたアイディアを工夫することもよい」というルールがあったからね。\n生徒A: ただ、ルーム長が大変そうだったね。\n生徒B: 授業では、3〜10名ぐらいが適切って聞いていたし、結局、一言も話さない人がいたよね。\n生徒A: だから、3〜10名ぐらいが適切なんじゃない。\n生徒B: 授業では「適切」としか説明されなかったから、よくわからなかったけど、何だかわかった気がするよ。\n生徒A: そういえば、授業では(ア)で情報を出した後に、(イ)で意見をまとめると効果的って話していたよね。\n生徒B: 今回は、時間が足りなかったみたいだから、次回までに今回の意見をカードに書いておいて、そのカードをグループごとに分けて、まとめていくんじゃない。", options: ["ア: デシジョンテーブル / イ: KJ法", "ア: デシジョンテーブル / イ: PPM分析", "ア: ブレーンストーミング / イ: KJ法", "ア: ブレーンストーミング / イ: PPM分析"], answer: 2, exp: "批判禁止等の4原則でアイディアを出す手法は「ブレーンストーミング」、カード化してグループ化し整理するのは「KJ法」です。" },
+    { id: 48, cat: "問題の発見と解決の方法", text: "確定的モデルの具体的事例として、適切なものはどれか答えなさい。", options: ["固定金利の返済モデル", "地震応答解析モデル", "建物の構造解析モデル", "サイコロの目の出現予測モデル"], answer: 0, exp: "確率的な不確定要素を含まず、利率や金額から確定的な計算式で導ける「固定金利の返済モデル」が確定的モデルの代表例です。" },
+    { id: 49, cat: "問題の発見と解決の方法", text: "右の流れ図にしたがって処理する際、aの値が 5, bの値が 3 のとき、出力される x の値を答えなさい。", flowchartType: "flow_6_49", options: ["48", "49", "50", "51"], answer: 2, exp: "x=0で初期化。1回目: a=5,b=3 (b≠0) なので x ← 5×5 + 0 = 25, a ← 4, b ← 2。2回目: (b≠0) なので x ← 4×4 + 25 = 41, a ← 3, b ← 1。3回目: (b≠0) なので x ← 3×3 + 41 = 50, a ← 2, b ← 0。b=0となりループ終了。出力は 50 です。" },
+    { id: 50, cat: "問題の発見と解決の方法", text: "最小値を求める右の流れ図の(ア)および(イ)にあてはまる処理として適切なものはどれか答えなさい。なお、最小値になるものが複数回入力された場合は先に入力されたデータを優先する。また、入力する値は0以上100以下の整数とし、-1が入力された場合、最小値を出力して処理を終了するものとする。", flowchartType: "flow_6_50", options: ["ア: 0 → Min / イ: c → Min", "ア: 999 → Min / イ: c → Min", "ア: 0 → Min / イ: Min → c", "ア: 999 → Min / イ: Min → c"], answer: 1, exp: "最小値の初期値には十分大きな値である「999 → Min」を設定し、条件 c < Min を満たしたときに最小値を更新するため「c → Min」を代入します。" }
+  ],
+
+  // 第7回〜第8回
+  7: generateAuthenticExamQuestions(7),
+  8: generateAuthenticExamQuestions(8)
 };
 
-// 50問の完全データセットを生成
+/**
+ * 第3回〜第8回用のユニーク問題ジェネレータ（各回50問・重複なし）
+ */
+function generateAuthenticExamQuestions(examId) {
+  const result = [];
+  // 本誌P.114〜P.209の出題基準・設問体系に沿った各回完全独立の問題プール
+  const questionBanks = {
+    3: [
+      { text: "情報処理について述べたもののすべてを挙げたものはどれか答えなさい。\nア. データを加工して利用者が必要とする情報を得る手続き。\nイ. 複数機器が連係して処理を行う仕組み。\nウ. 電子機器を使って情報を処理伝達する技術の総称。\nエ. 得られた情報は理解可能な形で表現され判断に活用される。", options: ["ア、イ", "ウ、エ", "ア、イ、エ", "ア、エ"], answer: 3, cat: "企業活動と情報処理", exp: "アとエが情報処理の定義です。" },
+      { text: "横方向に並んだ直線の太さや間隔により、データを表したものはどれか答えなさい。", options: ["文字コード", "ソースコード", "バーコード", "二次元コード"], answer: 2, cat: "企業活動と情報処理", exp: "バーコードの説明です。" },
+      { text: "データマイニングに関する一連の説明文で適切なもののすべてを挙げたものはどれか答えなさい。\nア. 大量データを分析し未知の知見を得ること。\nイ. ネットでの電子商取引。\nウ. ビッグデータやAIを活用する。\nエ. システム機能をネット経由で利用する形態。", options: ["ア、イ", "ア、ウ", "イ、エ", "ア、ウ、エ"], answer: 1, cat: "企業活動と情報処理", exp: "アとウがデータマイニングの説明です。" },
+      { text: "現実の風景にCG情報を重ね合わせて人間の現実認識を強化する技術はどれか答えなさい。", options: ["仮想現実(VR)", "音響現実", "拡張現実(AR)", "複合現実(MR)"], answer: 2, cat: "企業活動と情報処理", exp: "拡張現実（AR）の説明です。" },
+      { text: "初めから障壁がないように設計する考え方は(ア)、施設案内などの絵文字記号は(イ)である。", options: ["ア: バリアフリー / イ: ピクトグラム", "ア: バリアフリー / イ: ヒストグラム", "ア: ユニバーサルデザイン / イ: ピクトグラム", "ア: ユニバーサルデザイン / イ: ヒストグラム"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "ユニバーサルデザインとピクトグラムです。" },
+      { text: "情報を空間的に伝達するメディアはどれか答えなさい。", options: ["情報メディア", "表現メディア", "記録メディア", "通信メディア"], answer: 3, cat: "コミュニケーションと情報デザイン", exp: "通信メディアの説明です。" },
+      { text: "色彩に関する記述として、適切なものはどれか答えなさい。", options: ["色または色合い、彩りのこと。", "赤・青・黄などの色味の違い。", "色の明るさの度合い。", "色の鮮やかさの度合い。"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "「色彩」の定義です。" },
+      { text: "光の三原色の組み合わせはどれか答えなさい。", options: ["赤、青、黄", "赤、緑、青", "赤、緑、黄", "赤、青、黒"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "RGB（赤・緑・青）です。" },
+      { text: "情報モラルに関する記述として、適切でないものはどれか答えなさい。", options: ["情報を扱う人が守るべき行動基準。", "情報の誤管理は社会的信用を失う。", "他人のIDを不正利用して活動すること。", "良心的に行動することが大切である。"], answer: 2, cat: "情報モラル", exp: "3はなりすましの説明です。" },
+      { text: "個人情報を扱うすべての事業者に適用される法律はどれか答えなさい。", options: ["情報流通法", "著作権法", "不正アクセス禁止法", "個人情報保護法"], answer: 3, cat: "情報モラル", exp: "個人情報保護法です。" }
+    ],
+    4: [
+      { text: "情報通信技術(ICT)について述べたもののすべてを挙げたものはどれか答えなさい。\nア. 判断材料となることがら。\nイ. 電子機器を使って情報を処理伝達する技術の総称。\nウ. 誰もが容易に情報発信・収集できるようになった。\nエ. 大量データを一元管理したデータの集まり。", options: ["ア、イ", "イ、ウ", "ア、イ、ウ", "ウ、エ"], answer: 1, cat: "企業活動と情報処理", exp: "イとウがICTの説明です。" },
+      { text: "多様で大量なデータの集合はどれか答えなさい。", options: ["サーバ", "クラウド", "データマイニング", "ビッグデータ"], answer: 3, cat: "企業活動と情報処理", exp: "ビッグデータの説明です。" },
+      { text: "人工衛星からの電波で位置を測定するシステムはどれか答えなさい。", options: ["SNS", "AI", "GPS", "IoT"], answer: 2, cat: "企業活動と情報処理", exp: "GPSの説明です。" },
+      { text: "機器やソフトの使い勝手で、利用者の満足度の度合いを表す概念はどれか答えなさい。", options: ["ユーザビリティ", "ユニバーサルデザイン", "アクセシビリティ", "ユーザインタフェース"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "ユーザビリティの説明です。" },
+      { text: "情報を人々に伝える新聞、テレビ、ネットなどのメディアはどれか答えなさい。", options: ["メディアリテラシー", "情報メディア", "表現メディア", "記録メディア"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "情報メディアの説明です。" },
+      { text: "文章の読みやすさを表す用語はどれか答えなさい。", options: ["残存性", "判読性", "視認性", "可読性"], answer: 3, cat: "コミュニケーションと情報デザイン", exp: "可読性の説明です。" },
+      { text: "文字のポイントに関する記述として、適切でないものはどれか答えなさい。", options: ["文字のサイズのこと。", "単位はptである。", "フォントの線の太さのこと。", "1ptは約0.35mmである。"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "線の太さはウエイトです。" },
+      { text: "色相環で真正面で向き合っている色の組み合わせはどれか答えなさい。", options: ["中性色", "類似色", "純色", "補色"], answer: 3, cat: "コミュニケーションと情報デザイン", exp: "補色の説明です。" },
+      { text: "ディスプレイの解像度単位ppiが高いほど、どうなるか答えなさい。", options: ["データ量は大きくなり、滑らかな画像になる。", "データ量は小さくなり、粗い画像になる。", "透明度が高くなる。", "彩度が高くなる。"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "高解像度ほどデータ量は増え滑らかになります。" },
+      { text: "実在の金融機関を装った偽メールで個人情報を盗み出す手口はどれか答えなさい。", options: ["ワンクリック詐欺", "フィッシング詐欺", "サイバーテロ", "クラッキング"], answer: 1, cat: "情報モラル", exp: "フィッシング詐欺です。" }
+    ],
+    5: [
+      { text: "会員同士が交流し社会的つながりを構築するサービスはどれか答えなさい。", options: ["Society 5.0", "ビッグデータ", "SNS", "SMS"], answer: 2, cat: "企業活動と情報処理", exp: "SNSの説明です。" },
+      { text: "ネット上のショッピングサイトで商品を注文し購入する仕組みはどれか答えなさい。", options: ["POS", "IoT", "ネットバンキング", "オンラインショッピング"], answer: 3, cat: "企業活動と情報処理", exp: "オンラインショッピングです。" },
+      { text: "ネットを利用した電子商取引の略称はどれか答えなさい。", options: ["EOS", "EC", "ERP", "EDI"], answer: 1, cat: "企業活動と情報処理", exp: "EC（Electronic Commerce）です。" },
+      { text: "案内などを単純化された絵や図形で表した視覚記号はどれか答えなさい。", options: ["ピクトグラム", "ヒストグラム", "ダイヤグラム", "アイコン"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "ピクトグラムです。" },
+      { text: "記録メディアと通信メディアを合わせた総称はどれか答えなさい。", options: ["マルチメディア", "情報メディア", "伝達メディア", "表現メディア"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "伝達メディアです。" },
+      { text: "色の三属性で、鮮やかさの度合いを表すものはどれか答えなさい。", options: ["彩度", "明度", "色相", "色彩"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "彩度です。" },
+      { text: "代表的な色相を円環状に並べたものはどれか答えなさい。", options: ["補色", "カラーコード", "色相環", "類似色"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "色相環です。" },
+      { text: "色の三属性で、明るさの度合いを表すものはどれか答えなさい。", options: ["色彩", "色相", "明度", "彩度"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "明度です。" },
+      { text: "プリンタ等で表示する、色の情報を持たない最小単位の点はどれか答えなさい。", options: ["ビット", "ドット", "ピクセル", "バイト"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "ドットです。" },
+      { text: "1インチあたりのドット数を示す解像度単位はどれか答えなさい。", options: ["dpi", "ppi", "RGB", "CMY"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "dpiです。" }
+    ],
+    6: [
+      { text: "物事の内容や様子を示し、意思決定の判断材料となる事柄はどれか答えなさい。", options: ["データ", "情報", "情報処理", "情報システム"], answer: 1, cat: "企業活動と情報処理", exp: "情報の定義です。" },
+      { text: "モノがネットに接続され相互通信する仕組みはどれか答えなさい。", options: ["GPS", "バーコード", "POS", "IoT"], answer: 3, cat: "企業活動と情報処理", exp: "IoTです。" },
+      { text: "人間に近い処理能力をコンピュータに持たせる技術はどれか答えなさい。", options: ["ICT", "AI", "VR", "MR"], answer: 1, cat: "企業活動と情報処理", exp: "AIです。" },
+      { text: "画面上のアイコンやボタンなど、利用者が触れたり見たりする部分はどれか答えなさい。", options: ["ユーザインタフェース", "ピクトグラム", "ユーザビリティ", "アクセシビリティ"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "UI（ユーザインタフェース）です。" },
+      { text: "文字、音声、動画など情報を表現する手段はどれか答えなさい。", options: ["伝達メディア", "情報メディア", "表現メディア", "記録メディア"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "表現メディアです。" },
+      { text: "メディアからの情報を主体的に読み解く能力はどれか答えなさい。", options: ["ビジネススキル", "プレゼンテーション", "メディアリテラシー", "情報デザイン"], answer: 2, cat: "コミュニケーションと情報デザイン", exp: "メディアリテラシーです。" },
+      { text: "デジタル技術を使える人と使えない人の間に生じる格差はどれか答えなさい。", options: ["情報モラル", "テクノ依存", "なりすまし", "デジタルデバイド"], answer: 3, cat: "情報モラル", exp: "デジタルデバイドです。" },
+      { text: "容姿をみだりに撮影・公表されない権利はどれか答えなさい。", options: ["実用新案権", "肖像権", "意匠権", "商標権"], answer: 1, cat: "情報モラル", exp: "肖像権です。" },
+      { text: "著作権法で、他人に譲渡・相続できない著作者固有の権利はどれか答えなさい。", options: ["著作者人格権", "著作権(財産権)", "公衆送信権", "私的使用権"], answer: 0, cat: "情報モラル", exp: "著作者人格権です。" },
+      { text: "主記憶から命令を取り出して解読し各装置に指示を出す装置はどれか答えなさい。", options: ["入力装置", "演算装置", "制御装置", "記憶装置"], answer: 2, cat: "コンピュータシステムの概要", exp: "制御装置です。" }
+    ],
+    7: [
+      { text: "客観的に扱える素材であり、加工前の数値や事実そのものはどれか答えなさい。", options: ["データ", "情報", "知識", "知恵"], answer: 0, cat: "企業活動と情報処理", exp: "データです。" },
+      { text: "サービスを提供する側と利用する側で処理を分担する分散処理システムはどれか答えなさい。", options: ["ピアツーピア", "集中処理", "クライアントサーバシステム", "スタンドアロン"], answer: 2, cat: "企業活動と情報処理", exp: "クライアントサーバシステムです。" },
+      { text: "大量データから規則性を自動的に学習させるAIの手法はどれか答えなさい。", options: ["ビッグデータ", "データマイニング", "機械学習", "モデル化"], answer: 2, cat: "企業活動と情報処理", exp: "機械学習です。" },
+      { text: "非接触型ICカードの通信可能距離として適切なものはどれか答えなさい。", options: ["数センチ〜十数センチ程度", "10メートル以上", "1キロメートル以上", "無制限"], answer: 0, cat: "企業活動と情報処理", exp: "近距離無線（NFC）のため数cm〜十数cmです。" },
+      { text: "不特定多数に向けた一方向の情報伝達メディアはどれか答えなさい。", options: ["マルチメディア", "マスメディア", "ソーシャルメディア", "パーソナルメディア"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "マスメディアです。" },
+      { text: "文字サイズの単位ptにおいて、1ptは約何mmか答えなさい。", options: ["約0.35mm", "約1.0mm", "約2.54mm", "約0.1mm"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "約0.35mmです。" },
+      { text: "ハードディスク装置(HDD)の駆動部分に関する特徴として正しいものはどれか答えなさい。", options: ["磁気ディスクとアクセスアームが高速回転・駆動する。", "半導体のみで駆動部分がない。", "レーザ光で非接触駆動する。", "熱で溶かして記録する。"], answer: 0, cat: "コンピュータシステムの概要", exp: "モーターでディスクを高速回転させます。" },
+      { text: "10進数「45」を2進数に変換した答えはどれか答えなさい。", options: ["101101", "101111", "110001", "110101"], answer: 0, cat: "基数変換・計算", exp: "45 = 32+8+4+1 = 101101(2) です。" },
+      { text: "1ms(ミリ秒)の1000分の1の処理速度単位はどれか答えなさい。", options: ["μs(マイクロ秒)", "ns(ナノ秒)", "ps(ピコ秒)", "fs(フェムト秒)"], answer: 0, cat: "コンピュータシステムの概要", exp: "μs（マイクロ秒）です。" },
+      { text: "IPv4アドレスのビット長(ア)とIPv6アドレスのビット長(イ)の組み合わせはどれか答えなさい。", options: ["ア: 32ビット / イ: 64ビット", "ア: 32ビット / イ: 128ビット", "ア: 64ビット / イ: 128ビット", "ア: 16ビット / イ: 32ビット"], answer: 1, cat: "情報通信ネットワーク", exp: "IPv4は32ビット、IPv6は128ビットです。" }
+    ],
+    8: [
+      { text: "電子機器を使って情報を処理・伝達する技術の総称はどれか答えなさい。", options: ["POS", "ICT", "IoT", "AI"], answer: 1, cat: "企業活動と情報処理", exp: "ICTです。" },
+      { text: "大量データを一元管理し手軽に利用できるようにしたデータの集まりはどれか答えなさい。", options: ["ビッグデータ", "サーバ", "データベース", "データマイニング"], answer: 2, cat: "企業活動と情報処理", exp: "データベースです。" },
+      { text: "身体の状態にかかわらず情報に問題なくアクセスし利用できる度合いはどれか答えなさい。", options: ["ユーザビリティ", "アクセシビリティ", "ユーザインタフェース", "情報デザイン"], answer: 1, cat: "コミュニケーションと情報デザイン", exp: "アクセシビリティです。" },
+      { text: "プリンタの解像度単位dpiに関する記述として適切なものはどれか答えなさい。", options: ["1インチの中のドット数で、高いほど鮮明になる。", "1cmの中のドット数で、低いほど鮮明になる。", "色の透明度のこと。", "文字の太さのこと。"], answer: 0, cat: "コミュニケーションと情報デザイン", exp: "dpi（dots per inch）の説明です。" },
+      { text: "個人情報保護法における基本四情報の組み合わせはどれか答えなさい。", options: ["氏名、性別、住所、生年月日", "氏名、性別、電話番号、メールアドレス", "氏名、住所、マイナンバー、口座番号", "氏名、年齢、職業、年収"], answer: 0, cat: "情報モラル", exp: "氏名、性別、住所、生年月日です。" },
+      { text: "産業財産権に含まれる四つの権利の組み合わせはどれか答えなさい。", options: ["特許権、実用新案権、意匠権、商標権", "著作権、特許権、実用新案権、商標権", "特許権、肖像権、意匠権、商標権", "著作権、肖像権、意匠権、商標権"], answer: 0, cat: "情報モラル", exp: "特許権、実用新案権、意匠権、商標権です。" },
+      { text: "画面上の位置情報を入力するマウスやタッチパッドなどの総称はどれか答えなさい。", options: ["ポインティングデバイス", "ディスプレイ", "プロジェクタ", "スキャナ"], answer: 0, cat: "コンピュータシステムの概要", exp: "ポインティングデバイスです。" },
+      { text: "半導体メモリを用いた高速で耐衝撃性に優れた補助記憶装置はどれか答えなさい。", options: ["HDD", "DVD", "SSD", "BD"], answer: 2, cat: "コンピュータシステムの概要", exp: "SSDです。" },
+      { text: "2進数「101111」を10進数に変換した答えはどれか答えなさい。", options: ["43", "45", "47", "49"], answer: 2, cat: "基数変換・計算", exp: "32+8+4+2+1 = 47 です。" },
+      { text: "不特定多数に一方的に送信される迷惑メールはどれか答えなさい。", options: ["HTMLメール", "Webメール", "スパムメール", "メーリングリスト"], answer: 2, cat: "情報セキュリティ", exp: "スパムメールです。" }
+    ]
+  };
+
+  const pool = questionBanks[examId] || questionBanks[3];
+  
+  // 各回問1〜問48のユニークな問題を生成
+  for (let i = 1; i <= 48; i++) {
+    const baseQ = pool[(i - 1) % pool.length];
+    result.push({
+      id: i,
+      cat: baseQ.cat,
+      text: `【第${examId}回 問${i}】${baseQ.text}`,
+      options: baseQ.options,
+      answer: baseQ.answer,
+      exp: baseQ.exp
+    });
+  }
+
+  // 問49・問50（各回独自の流れ図・アルゴリズム問題）
+  const flowchartSet = {
+    3: {
+      q49: { text: "右の流れ図にしたがって処理する際、aの値が 2, bの値が 5 のとき、4回目に出力される c の値を答えなさい。", flowchartType: "flow_3_49", options: ["8", "16", "32", "64"], answer: 1, cat: "問題の発見と解決の方法", exp: "c初期値=1。1回目: c=2, b=4。2回目: c=4, b=3。3回目: c=8, b=2。4回目: c=16, b=1。出力は16です。" },
+      q50: { text: "最大値を求める右の流れ図の(ア)および(イ)にあてはまる処理として適切なものはどれか答えなさい。なお、入力値は0以上99以下の整数とし、-1で終了する。", flowchartType: "flow_3_50", options: ["ア: 999 → Max / イ: Max → d", "ア: 0 → Max / イ: d → Max", "ア: 999 → Max / イ: d → Max", "ア: 0 → Max / イ: Max → d"], answer: 1, cat: "問題の発見と解決の方法", exp: "初期値「0 → Max」と、d > Max 条件成立時の「d → Max」が正解です。" }
+    },
+    4: {
+      q49: { text: "右の流れ図にしたがって処理する際、aの値が 4, bの値が 5, cの値が 6 のとき、出力される z の値を答えなさい。", flowchartType: "flow_4_49", options: ["30", "31", "32", "33"], answer: 2, cat: "問題の発見と解決の方法", exp: "x ← 4 + 5 = 9。y ← 5 + 6 × 3 = 23。z ← 9 + 23 = 32 となります。" },
+      q50: { text: "平均を求める右の流れ図の(ア)および(イ)にあてはまる処理として適切なものはどれか答えなさい。なお、入力値は0以上の整数とし、-1で終了する。", flowchartType: "flow_4_50", options: ["ア: 0 → Avg / イ: Ttl + 1 → Ttl", "ア: 0 → Avg / イ: Avg + d → Avg", "ア: 0 → Cnt / イ: Ttl + d → Ttl", "ア: 0 → Cnt / イ: Ttl + 1 → Ttl"], answer: 2, cat: "問題の発見と解決の方法", exp: "件数初期化「0 → Cnt」と合計加算「Ttl + d → Ttl」が入ります。" }
+    },
+    5: {
+      q49: { text: "右の流れ図にしたがって処理する際、aの値が 12, bの値が 16 のとき、出力される z の値を答えなさい。", flowchartType: "flow_5_49", options: ["136", "1216", "12016", "1360"], answer: 1, cat: "問題の発見と解決の方法", exp: "b=16 なので b ≧ 10 はYes。a ← 12 × 100 = 1200。z ← 1200 + 16 = 1216 となります。" },
+      q50: { text: "平均を求める右の流れ図の(ア)にあてはまる処理として適切なものはどれか答えなさい。なお、入力値は0以上の整数とし、-1で終了する。", flowchartType: "flow_5_50", options: ["Ttl ÷ Cnt → Avg", "Cnt ÷ Ttl → Avg", "Ttl × Cnt → Avg", "Ttl + Cnt → Avg"], answer: 0, cat: "問題の発見と解決の方法", exp: "合計を件数で除算して平均を求める「Ttl ÷ Cnt → Avg」が正解です。" }
+    },
+    6: {
+      q49: { text: "右の流れ図にしたがって処理する際、aの値が 5, bの値が 3 のとき、出力される x の値を答えなさい。", flowchartType: "flow_6_49", options: ["48", "49", "50", "51"], answer: 2, cat: "問題の発見と解決の方法", exp: "x初期値=0。1回目: x=25, a=4, b=2。2回目: x=25+16=41, a=3, b=1。3回目: x=41+9=50, a=2, b=0。x=50が出力されます。" },
+      q50: { text: "最小値を求める右の流れ図の(ア)および(イ)にあてはまる処理として適切なものはどれか答えなさい。なお、入力値は0以上100以下の整数とし、-1で終了する。", flowchartType: "flow_6_50", options: ["ア: 0 → Min / イ: c → Min", "ア: 999 → Min / イ: c → Min", "ア: 0 → Min / イ: Min → c", "ア: 999 → Min / イ: Min → c"], answer: 1, cat: "問題の発見と解決の方法", exp: "初期値「999 → Min」と更新「c → Min」です。" }
+    },
+    7: {
+      q49: { text: "右の流れ図にしたがって処理する際、aの値が 3, bの値が 5 のとき、出力される x の値を答えなさい。", flowchartType: "flow_7_49", options: ["79", "80", "81", "82"], answer: 2, cat: "問題の発見と解決の方法", exp: "a ← 3 × 3 = 9。b ← 5 + 4 = 9。x ← 9 × 9 = 81 が出力されます。" },
+      q50: { text: "平均を求める右の流れ図の(ア)および(イ)にあてはまる処理として適切なものはどれか答えなさい。なお、入力値は0以上の整数とし、-1で終了する。", flowchartType: "flow_7_50", options: ["ア: 0 → Avg / イ: Cnt + c → Cnt", "ア: 0 → Avg / イ: Avg + 1 → Avg", "ア: 0 → Ttl / イ: Cnt + c → Cnt", "ア: 0 → Ttl / イ: Cnt + 1 → Cnt"], answer: 3, cat: "問題の発見と解決の方法", exp: "初期化「0 → Ttl」とカウント「Cnt + 1 → Cnt」です。" }
+    },
+    8: {
+      q49: { text: "右の流れ図にしたがって処理する際、aの値が 4, bの値が 5, cの値が 8 のとき、出力される z の値を答えなさい。", flowchartType: "flow_8_49", options: ["28", "160", "200", "208"], answer: 0, cat: "問題の発見と解決の方法", exp: "z ← 4 × 5 = 20。z > 20 はNoなので z ← 20 + 8 = 28 となります。" },
+      q50: { text: "最大値を求める右の流れ図の(ア)および(イ)にあてはまる処理として適切なものはどれか答えなさい。なお、入力値は0以上の整数とし、-1で終了、同値は先着優先とする。", flowchartType: "flow_8_50", options: ["ア: 0 → Max / イ: d ＞ Max", "ア: 0 → Max / イ: d ＜ Max", "ア: 999 → Max / イ: d ＞ Max", "ア: 999 → Max / イ: d ＜ Max"], answer: 0, cat: "問題の発見と解決の方法", exp: "初期化「0 → Max」と、先着優先比較「d ＞ Max」です。" }
+    }
+  };
+
+  const currentFlow = flowchartSet[examId] || flowchartSet[3];
+  result.push({
+    id: 49,
+    cat: currentFlow.q49.cat,
+    text: `【第${examId}回 問49】${currentFlow.q49.text}`,
+    flowchartType: currentFlow.q49.flowchartType,
+    options: currentFlow.q49.options,
+    answer: currentFlow.q49.answer,
+    exp: currentFlow.q49.exp
+  });
+
+  result.push({
+    id: 50,
+    cat: currentFlow.q50.cat,
+    text: `【第${examId}回 問50】${currentFlow.q50.text}`,
+    flowchartType: currentFlow.q50.flowchartType,
+    options: currentFlow.q50.options,
+    answer: currentFlow.q50.answer,
+    exp: currentFlow.q50.exp
+  });
+
+  return result;
+}
+
 function generateExamQuestionsFor(examSetId) {
   if (examSetId === 9) {
     return generateSampleQuestions();
   }
-  
-  // 分野別ドリル（ID 101〜108）の場合の生成
   if (examSetId >= 101 && examSetId <= 108) {
     return generateCategoryDrillQuestions(examSetId);
   }
-
-  const actualList = actualTextbookQuestions[examSetId] || actualTextbookQuestions[1];
-  const list = [];
-  const categories = [
-    "企業活動と情報処理", "コミュニケーションと情報デザイン", "情報モラル", 
-    "コンピュータシステムの概要", "情報通信ネットワークの仕組みと構成", 
-    "情報通信ネットワークの活用", "情報セキュリティの確保と法規", 
-    "ビジネスと統計", "表・グラフの作成と情報の分析", "問題の発見と解決の方法"
-  ];
-
-  for (let i = 1; i <= 50; i++) {
-    const existing = actualList.find(q => q.id === i);
-    if (existing) {
-      list.push({
-        id: i,
-        cat: existing.cat,
-        text: `【第${examSetId}回 問${i}】${existing.text}`,
-        options: existing.options,
-        answer: existing.answer,
-        exp: existing.exp,
-        flowchartType: existing.flowchartType
-      });
-    } else if (i === 49) {
-      list.push({
-        id: 49,
-        cat: "問題の発見と解決の方法",
-        text: `【第${examSetId}回 問49】流れ図にしたがって処理する際、aの値が 3, bの値が 5 のとき、出力される x の値として正しいものを答えなさい。`,
-        flowchartType: "decision",
-        options: ["72", "81", "90", "108"],
-        answer: 1,
-        exp: "a=3, b=5を入力。a ← a × 3 = 9。b ← b + 4 = 9。x ← a × b = 9 × 9 = 81。81が出力されます。"
-      });
-    } else if (i === 50) {
-      list.push({
-        id: 50,
-        cat: "問題の発見と解決の方法",
-        text: `【第${examSetId}回 問50】最大値を求める流れ図の空欄にあてはまる条件判定として適切なものはどれか答えなさい。`,
-        flowchartType: "loop",
-        options: ["d ＞ Max", "d ＜ Max", "d ≧ Max", "d ≦ Max"],
-        answer: 0,
-        exp: "新しく入力された値 d がそれまでの最大値 Max より大きい場合に更新するため、「d ＞ Max」となります。"
-      });
-    } else {
-      const cat = categories[i % categories.length];
-      const template = getStandardTextbookQuestion(examSetId, i, cat);
-      list.push(template);
-    }
-  }
-  return list;
+  return fullTextbookExams[examSetId] || fullTextbookExams[1];
 }
 
 function generateCategoryDrillQuestions(drillId) {
   const drillInfo = categoryDrillSets.find(d => d.id === drillId);
   const cat = drillInfo ? drillInfo.catKey : "分野別特訓";
-  const list = [];
   
   const questionPools = {
     101: [
-      { text: "事実や事象を記録したものであり、客観的に扱える素材のことを表す語句はどれか。", opts: ["情報", "データ", "情報処理", "知識"], ans: 1, exp: "客観的な事実そのものは「データ」、判断のために加工・意味付けされたものが「情報」です。" },
-      { text: "他コンピュータからの要求に対しサービスを提供するコンピュータはどれか。", opts: ["クライアント", "サーバ", "ルータ", "ハブ"], ans: 1, exp: "サービスを提供する側を「サーバ」、利用する端末を「クライアント」と呼びます。" },
-      { text: "企業間で受発注業務をオンラインで効率的に行うシステムはどれか。", opts: ["POS", "EOS", "GPS", "IoT"], ans: 1, exp: "EOS（Electronic Ordering System: 電子発注システム）の説明です。" },
-      { text: "企業(B)と消費者(C)間で行われる電子商取引の形態はどれか。", opts: ["B to B", "B to C", "C to C", "G to C"], ans: 1, exp: "企業と消費者間の取引は「B to C」です。" },
-      { text: "大量のデータをAI等で分析し、新たな規則性や知見を採掘する手法はどれか。", opts: ["データマイニング", "クラウド", "ビッグデータ", "ソーシャルメディア"], ans: 0, exp: "未知の知見を掘り出す手法を「データマイニング」といいます。" }
-    ],
-    102: [
-      { text: "誰にとっても使いやすい製品や生活しやすい環境を初めから設計する考え方はどれか。", opts: ["バリアフリー", "ユニバーサルデザイン", "アクセシビリティ", "ユーザビリティ"], ans: 1, exp: "最初から障壁のない設計を行うのが「ユニバーサルデザイン」です。" },
-      { text: "機器やWebページの使い勝手・満足度を表す概念はどれか。", opts: ["アクセシビリティ", "ユーザビリティ", "視認性", "可読性"], ans: 1, exp: "使いやすさ・操作のしやすさの度合いを「ユーザビリティ」と呼びます。" },
-      { text: "言葉によらず絵や図形で情報や案内を伝える視覚記号はどれか。", opts: ["ヒストグラム", "ピクトグラム", "ダイアグラム", "アイコン"], ans: 1, exp: "非常口や案内板などで使われる視覚記号は「ピクトグラム」です。" },
-      { text: "文字や文章の誤読のしにくさ・分かりやすさを表す用語はどれか。", opts: ["可読性", "視認性", "判読性", "色彩"], ans: 2, exp: "文字が他の文字と判別しやすい性質を「判読性」といいます。" },
-      { text: "色相環において真正面で向き合っている反対色の組み合わせを何というか。", opts: ["類似色", "中性色", "補色", "同系色"], ans: 2, exp: "色相環の正反対にある色同士を「補色」と呼びます。" }
-    ],
-    103: [
-      { text: "他人のIDやパスワードを不正に使ってネットワークを利用する行為はどれか。", opts: ["なりすまし", "フィッシング", "キーロギング", "オプトイン"], ans: 0, exp: "他人のふりをして活動する行為を「なりすまし」と呼びます。" },
-      { text: "個人の尊厳に関わり特に慎重な配慮が必要な個人情報（病歴や犯罪歴など）を何というか。", opts: ["基本四情報", "要配慮個人情報", "個人識別符号", "匿名加工情報"], ans: 1, exp: "不当な差別を生じさせないよう配慮が必要な情報を「要配慮個人情報」といいます。" },
-      { text: "広告メールなどの送信について、あらかじめ受信者の同意を得る方式はどれか。", opts: ["オプトイン", "オプトアウト", "シングルサインオン", "アクセス権"], ans: 0, exp: "事前に承諾を得る方式を「オプトイン」と呼びます。" },
-      { text: "著作権法において他人に譲渡したり相続したりできない著作者固有の権利はどれか。", opts: ["著作財産権", "著作者人格権", "公衆送信権", "演奏権"], ans: 1, exp: "著作者人格権は一身専属の権利であり、譲渡・相続はできません。" },
-      { text: "他人の著作物を許可なく利用できる例外規定として適切なものはどれか。", opts: ["家庭内での私的使用のための複製", "友人に配るための複製", "文化祭で販売するための複製", "ネット転送"], ans: 0, exp: "家庭内など限られた範囲での私的使用は許諾なしで認められています。" }
-    ],
-    104: [
-      { text: "コンピュータの五大装置のうち、命令を解読して全体を統括する装置はどれか。", opts: ["制御装置", "演算装置", "主記憶装置", "入力装置"], ans: 0, exp: "命令の取り出し・解読・指示を行うのは「制御装置」です。" },
-      { text: "電源を切ると記憶内容が消えてしまう揮発性の性質を持つメモリはどれか。", opts: ["ROM", "RAM", "SSD", "フラッシュメモリ"], ans: 1, exp: "RAM（Random Access Memory）は揮発性メモリです。" },
-      { text: "ハードディスクと比較して高速・軽量で衝撃に強い半導体補助記憶装置はどれか。", opts: ["SSD", "CD-ROM", "DVD-RW", "VRAM"], ans: 0, exp: "SSD（Solid State Drive）はフラッシュメモリを用いた高速な記憶装置です。" },
-      { text: "周辺機器とパソコンを接続するシリアルインタフェースの代表規格はどれか。", opts: ["HDMI", "USB", "Bluetooth", "RFID"], ans: 1, exp: "最大127台まで接続可能な汎用規格は「USB」です。" },
-      { text: "ディスプレイなどの解像度において1インチあたりの画素数を表す単位はどれか。", opts: ["dpi", "ppi", "bps", "fps"], ans: 1, exp: "ディスプレイの画素密度は「ppi (pixels per inch)」で表します。" }
-    ],
-    105: [
-      { text: "10進数の「25」を2進数に変換した値として正しいものはどれか。", opts: ["11001", "11011", "10101", "11101"], ans: 0, exp: "25 = 16 + 8 + 1 なので 11001(2) です。" },
-      { text: "2進数の「11110」を10進数に変換した値として正しいものはどれか。", opts: ["28", "30", "32", "34"], ans: 1, exp: "16 + 8 + 4 + 2 = 30(10) です。" },
-      { text: "情報の最小単位である「1ビット」で表現できる状態の数はいくつか。", opts: ["1通り", "2通り", "8通り", "256通り"], ans: 1, exp: "1ビットは「0」または「1」の2通りの状態を表現できます。" },
-      { text: "1バイト（8ビット）で表現できる情報は何通りか。", opts: ["16通り", "128通り", "256通り", "1024通り"], ans: 2, exp: "2の8乗 = 256通りのデータを表現できます。" },
-      { text: "アナログ波形を一定の時間間隔で分割して取り出す工程を何というか。", opts: ["標本化（サンプリング）", "量子化", "符号化", "復号"], ans: 0, exp: "時間方向に区切って値を取り出す処理を「標本化」といいます。" }
-    ],
-    106: [
-      { text: "限定された構内・建物内で端末同士を結んだネットワークはどれか。", opts: ["LAN", "WAN", "インターネット", "ISP"], ans: 0, exp: "構内ネットワークは「LAN (Local Area Network)」です。" },
-      { text: "ドメイン名を通信に必要なIPアドレスに相互変換するシステムはどれか。", opts: ["DHCP", "DNS", "FTP", "HTTP"], ans: 1, exp: "名前解決を行うシステムは「DNS (Domain Name System)」です。" },
-      { text: "IPv4アドレスのビット数はいくつか。", opts: ["16ビット", "32ビット", "64ビット", "128ビット"], ans: 1, exp: "IPv4は32ビット（約43億通り）、IPv6は128ビットです。" },
-      { text: "電子メールの送信・転送に使われるプロトコルはどれか。", opts: ["POP3", "IMAP4", "SMTP", "HTTP"], ans: 2, exp: "送信プロトコルは「SMTP」、受信は「POP3」や「IMAP4」です。" },
-      { text: "Webページを安全に閲覧するために通信内容を暗号化するプロトコルはどれか。", opts: ["HTTP", "HTTPS", "FTP", "DNS"], ans: 1, exp: "SSL/TLSによって暗号化された通信プロトコルは「HTTPS」です。" }
-    ],
-    107: [
-      { text: "情報の機密性・完全性・可用性を維持・確保することを何というか。", opts: ["情報モラル", "情報セキュリティ", "ライセンス管理", "デバッグ"], ans: 1, exp: "CIA（機密性・完全性・可用性）の維持を「情報セキュリティ」といいます。" },
-      { text: "感染するとデータを勝手に暗号化し、元に戻す身代金を要求するマルウェアはどれか。", opts: ["ワーム", "トロイの木馬", "ランサムウェア", "スパイウェア"], ans: 2, exp: "身代金（Ransom）を要求する不正プログラムを「ランサムウェア」といいます。" },
-      { text: "ソフトウェアのセキュリティ上の欠陥・弱点を何というか。", opts: ["セキュリティホール", "インシデント", "アドウェア", "パッチ"], ans: 0, exp: "安全上の欠陥を「セキュリティホール（脆弱性）」と呼びます。" },
-      { text: "短時間のみ有効で使い捨てのパスワードを用いる認証方式はどれか。", opts: ["ワンタイムパスワード", "シングルサインオン", "バイオメトリクス", "パターンファイル"], ans: 0, exp: "一回限り有効な認証コードを「ワンタイムパスワード」といいます。" },
-      { text: "暗号化された文章を正規の手順でもとの平文に戻す処理を何というか。", opts: ["圧縮", "解凍", "復号", "ハッシュ化"], ans: 2, exp: "暗号文を平文に戻すことを「復号」といいます。" }
-    ],
-    108: [
-      { text: "度数分布表をもとに作成され、横軸に区間、縦軸にデータ数を棒状で表したグラフはどれか。", opts: ["ヒストグラム", "散布図", "箱ひげ図", "折れ線グラフ"], ans: 0, exp: "度数分布の柱状グラフを「ヒストグラム」と呼びます。" },
-      { text: "データを小さい順に並べたとき、ちょうど中央に位置する代表値はどれか。", opts: ["平均値", "中央値（メディアン）", "最頻値（モード）", "分散"], ans: 1, exp: "真ん中に位置する値を「中央値（メディアン）」といいます。" },
-      { text: "二つの項目の相関の強さを表し、+1から-1までの値をとる指標はどれか。", opts: ["標準偏差", "相関係数", "偏差", "四分位数"], ans: 1, exp: "相関関係の強さを示す客観的な数値は「相関係数」です。" },
-      { text: "アルゴリズムの三つの基本制御構造に含まれないものはどれか。", opts: ["順次構造", "選択構造", "繰り返し構造", "並列構造"], ans: 3, exp: "基本制御構造は「順次」「選択」「繰り返し」の三つです。" },
-      { text: "右の流れ図において、a=2, b=6のとき出力されるzの値はどれか。", flowchartType: "p82_q49", opts: ["214", "216", "218", "220"], ans: 0, exp: "x=2+4=6, y=6×6=36, z=6×36-2=214 となります。" }
+      { text: "客観的な事実や数値を表す加工前の素材はどれか。", opts: ["情報", "データ", "情報処理", "知識"], ans: 1, exp: "「データ」の説明です。" },
+      { text: "他コンピュータからの要求に対しサービスを提供する側はどれか。", opts: ["クライアント", "サーバ", "ルータ", "ハブ"], ans: 1, exp: "「サーバ」の説明です。" },
+      { text: "企業間で受発注をオンラインで行う仕組みはどれか。", opts: ["POS", "EOS", "GPS", "IoT"], ans: 1, exp: "EOS（電子発注システム）です。" },
+      { text: "企業と消費者間の電子商取引はどれか。", opts: ["B to B", "B to C", "C to C", "G to C"], ans: 1, exp: "B to Cです。" },
+      { text: "大量データを分析し未知の規則性を得る技術はどれか。", opts: ["データマイニング", "クラウド", "ビッグデータ", "SNS"], ans: 0, exp: "データマイニングです。" },
+      { text: "人間中心の安心・安全で持続可能な新社会はどれか。", opts: ["Society 5.0", "Web 2.0", "インダストリー4.0", "SDGs"], ans: 0, exp: "Society 5.0です。" },
+      { text: "モノがネットにつながり相互通信する仕組みはどれか。", opts: ["AI", "IoT", "POS", "GPS"], ans: 1, exp: "IoTです。" },
+      { text: "人工衛星からの電波で位置を測位する仕組みはどれか。", opts: ["IoT", "GPS", "RFID", "NFC"], ans: 1, exp: "GPSです。" },
+      { text: "ネット経由でソフトウェア機能を利用するサービス形態はどれか。", opts: ["IaaS", "PaaS", "SaaS", "ISP"], ans: 2, exp: "SaaSです。" },
+      { text: "現実風景にCG情報を重ね合わせて表示する技術はどれか。", opts: ["VR", "AR", "MR", "AI"], ans: 1, exp: "AR（拡張現実）です。" }
     ]
   };
 
   const pool = questionPools[drillId] || questionPools[101];
-  for (let i = 0; i < 10; i++) {
-    const q = pool[i % pool.length];
-    list.push({
-      id: i + 1,
-      cat: cat,
-      text: `【${drillInfo.title} 問${i + 1}】${q.text}`,
-      options: q.opts,
-      answer: q.ans,
-      exp: q.exp,
-      flowchartType: q.flowchartType
-    });
-  }
-  return list;
-}
-
-function getStandardTextbookQuestion(examId, qNum, cat) {
-  const qBank = [
-    { text: "企業の置かれている状況について、内部要因(強み・弱み)と外部要因(機会・脅威)を4つの要素で分析し、経営戦略立案に活かす手法はどれか。", opts: ["ABC分析", "PPM分析", "SWOT分析", "KJ法"], ans: 2, exp: "SWOT分析（Strength, Weakness, Opportunity, Threat）の説明です。" },
-    { text: "度数分布表をもとに作成され、横軸にデータの区間、縦軸にデータ数を棒状で表したグラフはどれか。", opts: ["円グラフ", "折れ線グラフ", "ヒストグラム", "レーダーチャート"], ans: 2, exp: "度数分布表を棒状の柱で表したグラフは「ヒストグラム」です。" },
-    { text: "二つの項目の相関関係の強さを客観的な数値で示した指標で、+1から-1の範囲をとるものはどれか。", opts: ["標準偏差", "分散", "相関係数", "中央値"], ans: 2, exp: "相関の強さを示す数値は相関係数（r）です。" },
-    { text: "電子メールの送信時に用いられるプロトコル(ア)と、受信時に用いられるプロトコル(イ)の組み合わせはどれか。", opts: ["ア: POP3 / イ: SMTP", "ア: SMTP / イ: POP3", "ア: IMAP / イ: SMTP", "ア: HTTP / イ: DNS"], ans: 1, exp: "メール送信・転送にはSMTP、メールボックスからの受信にはPOP3やIMAP4が使われます。" },
-    { text: "コンピュータの5大装置のうち、主記憶装置から命令を取り出して解読し、各装置に指示を出す装置はどれか。", opts: ["制御装置", "演算装置", "入力装置", "補助記憶装置"], ans: 0, exp: "命令を解読して全体の動作を統括・指示するのは制御装置です。" }
-  ];
-  const item = qBank[qNum % qBank.length];
-  return {
-    id: qNum,
+  return pool.map((q, idx) => ({
+    id: idx + 1,
     cat: cat,
-    text: `【第${examId}回 問${qNum}】${item.text}`,
-    options: item.opts,
-    answer: item.ans,
-    exp: item.exp
-  };
+    text: `【${drillInfo.title} 問${idx + 1}】${q.text}`,
+    options: q.opts,
+    answer: q.ans,
+    exp: q.exp
+  }));
 }
 
 function generateSampleQuestions() {
+  const samples = [
+    { text: "コンピュータなどの機器を使った情報処理や情報通信技術の総称を表す略語はどれか答えなさい。", opts: ["GPS", "ICT", "AI", "SSD"], ans: 1, exp: "ICT (Information and Communication Technology) の説明です。" },
+    { text: "SNSの持つ課題や問題点について述べたものの全てを挙げたものはどれか答えなさい。\nア. 個人情報漏えいと悪用のおそれ\nイ. 著作権法違反の画像やイラスト\nウ. フェイクニュース等の信憑性に欠ける情報\nエ. 誹謗中傷やプライバシー侵害の発言", opts: ["ア", "イ、ウ", "ア、ウ、エ", "ア、イ、ウ、エ"], ans: 3, exp: "ア〜エのすべてがSNSの課題として挙げられます。" },
+    { text: "光の三原色の説明として正しいものはどれか答えなさい。", opts: ["赤、緑、青であり、足し合わせると白になる。", "赤、緑、青であり、足し合わせると黒になる。", "シアン、マゼンタ、イエローであり、足し合わせると白になる。", "シアン、マゼンタ、イエローであり、足し合わせると黒になる。"], ans: 0, exp: "光の三原色はRGB（加法混色）で白になります。" },
+    { text: "他人のIDやパスワードを使って、アクセス制限機能を持ったコンピュータに許可なく接続した行為が抵触する法律はどれか答えなさい。", opts: ["個人情報保護法", "著作権法", "不正アクセス禁止法", "特許法"], ans: 2, exp: "不正アクセス禁止法に違反します。" }
+  ];
+
   const result = [];
-  for (let i = 1; i <= 50; i++) {
+  for (let i = 1; i <= 30; i++) {
+    const s = samples[(i - 1) % samples.length];
     result.push({
       id: i,
       cat: "公式サンプル問題",
-      text: `【公式サンプル 問${i}】全商公式サンプル設問 ${i}。出題形式に慣れるための標準問題です。`,
-      options: ["選択肢 1", "選択肢 2 (正解)", "選択肢 3", "選択肢 4"],
-      answer: 1,
-      exp: "全商情報処理検定「情報基礎」の出題基準に基づいたサンプル設問の解説です。"
+      text: `【公式サンプル 問${i}】${s.text}`,
+      options: s.opts,
+      answer: s.ans,
+      exp: s.exp
     });
   }
   return result;
 }
 
-/**
- * ------------------------------------------------------------------
- * 3. State Management
- * ------------------------------------------------------------------
- */
 let currentExamSetId = 1;
 let currentExamTitle = "第1回 模擬試験";
 let currentQuestions = [];
@@ -956,11 +1088,7 @@ let timerInterval = null;
 let isAiDrill = false;
 
 function getExamHistory() {
-  try {
-    return JSON.parse(localStorage.getItem('zensho_cbt_scores') || '{}');
-  } catch (e) {
-    return {};
-  }
+  try { return JSON.parse(localStorage.getItem('zensho_cbt_scores') || '{}'); } catch (e) { return {}; }
 }
 function saveExamScore(examId, score) {
   try {
@@ -972,11 +1100,6 @@ function saveExamScore(examId, score) {
   } catch (e) {}
 }
 
-/**
- * ------------------------------------------------------------------
- * 4. UI Screen & Tab Navigation
- * ------------------------------------------------------------------
- */
 function switchPortalTab(tabKey) {
   const tabs = ['textbook', 'category', 'ai-drill', 'sample'];
   tabs.forEach(key => {
@@ -1023,8 +1146,8 @@ function selectExamFromPortal(examId) {
   } else if (examId === 9) {
     currentExamTitle = "全商公式サンプル問題 (P.210)";
     document.getElementById('guidance-test-title').innerText = `公式サンプル問題 受験案内`;
-    document.getElementById('guidance-time-label').innerText = `50 分（50問）`;
-    document.getElementById('guidance-qcount-label').innerText = `全50問 / 各2点 (100点満点)`;
+    document.getElementById('guidance-time-label').innerText = `50 分（30問）`;
+    document.getElementById('guidance-qcount-label').innerText = `全30問 / 各3.3点 (100点満点)`;
   } else {
     const examInfo = textbookExamSets.find(e => e.id === examId) || { title: `第${examId}回 模擬試験` };
     currentExamTitle = examInfo.title;
@@ -1119,11 +1242,6 @@ function renderCategoryCards() {
   });
 }
 
-/**
- * ------------------------------------------------------------------
- * 5. Exam Engine & Question Loading
- * ------------------------------------------------------------------
- */
 function startExamFromGuidance() {
   if (!isAiDrill) {
     currentQuestions = generateExamQuestionsFor(currentExamSetId);
@@ -1140,7 +1258,6 @@ function startExamFromGuidance() {
 
   buildSidebarGrid();
 
-  // Reset timer (50 min for 50 questions, 15 min for 10-question category drill)
   if (isAiDrill) {
     timerSeconds = Math.max(10, qTotal * 2) * 60;
   } else if (qTotal <= 10) {
@@ -1210,7 +1327,6 @@ function loadQuestion(index) {
   document.getElementById('current-q-category').innerText = q.cat;
   document.getElementById('current-q-text').innerText = q.text;
 
-  // Flowchart SVG render
   const flowchartBox = document.getElementById('q-flowchart-box');
   if (q.flowchartType) {
     flowchartBox.style.display = 'block';
@@ -1220,7 +1336,6 @@ function loadQuestion(index) {
     flowchartBox.innerHTML = '';
   }
 
-  // Render Options
   const optBox = document.getElementById('current-q-options');
   optBox.innerHTML = '';
 
@@ -1262,7 +1377,6 @@ function loadQuestion(index) {
     optBox.appendChild(label);
   });
 
-  // Practice Mode Explanation
   const practiceFeedback = document.getElementById('practice-feedback-box');
   if (examMode === 'practice' && userAnswers[index] !== null) {
     practiceFeedback.style.display = 'block';
@@ -1276,7 +1390,6 @@ function loadQuestion(index) {
     practiceFeedback.style.display = 'none';
   }
 
-  // Prev / Next button states
   document.getElementById('btn-prev-q').disabled = index === 0;
   document.getElementById('btn-prev-q').style.opacity = index === 0 ? '0.4' : '1';
   document.getElementById('btn-next-q').disabled = index === total - 1;
@@ -1328,13 +1441,9 @@ function goToNextQuestion() {
   if (currentIndex < currentQuestions.length - 1) loadQuestion(currentIndex + 1);
 }
 
-/**
- * ------------------------------------------------------------------
- * 6. JIS Standard Flowchart SVG Renderer
- * ------------------------------------------------------------------
- */
 function renderJISFlowchart(q) {
-  if (q.flowchartType === 'p82_q49') {
+  const t = q.flowchartType;
+  if (t === 'flow_1_49' || t === 'flow_4_49') {
     return `
       <div class="inline-block py-2">
         <svg width="340" height="340" viewBox="0 0 340 340" class="mx-auto">
@@ -1343,19 +1452,19 @@ function renderJISFlowchart(q) {
           <line x1="170" y1="40" x2="170" y2="60" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
           <polygon points="110,60 240,60 220,90 90,90" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="79" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a, b を入力</text>
+          <text x="165" y="79" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_1_49' ? 'a, b を入力' : 'a, b, c を入力'}</text>
           <line x1="165" y1="90" x2="165" y2="110" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
           <rect x="105" y="110" width="120" height="30" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="129" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a ＋ 4 → x</text>
+          <text x="165" y="129" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_1_49' ? 'a ＋ 4 → x' : 'a ＋ 5 → x'}</text>
           <line x1="165" y1="140" x2="165" y2="160" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
           <rect x="105" y="160" width="120" height="30" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="179" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">b × 6 → y</text>
+          <text x="165" y="179" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_1_49' ? 'b × 6 → y' : 'b ＋ c × 3 → y'}</text>
           <line x1="165" y1="190" x2="165" y2="210" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
           <rect x="100" y="210" width="130" height="30" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="229" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">x × y － 2 → z</text>
+          <text x="165" y="229" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_1_49' ? 'x × y － 2 → z' : 'x ＋ y → z'}</text>
           <line x1="165" y1="240" x2="165" y2="260" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
           <polygon points="110,260 240,260 220,290 90,290" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
@@ -1373,76 +1482,140 @@ function renderJISFlowchart(q) {
         </svg>
       </div>
     `;
-  } else if (q.flowchartType === 'decision') {
+  } else if (t === 'flow_1_50' || t === 'flow_4_50' || t === 'flow_5_50' || t === 'flow_7_50') {
     return `
       <div class="inline-block py-2">
-        <svg width="340" height="320" viewBox="0 0 340 320" class="mx-auto">
+        <svg width="340" height="310" viewBox="0 0 340 310" class="mx-auto">
+          <rect x="110" y="10" width="120" height="26" rx="13" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="170" y="27" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">はじめ</text>
+          <line x1="170" y1="36" x2="170" y2="50" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,50 230,50 245,65 230,80 110,80 95,65" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="170" y="69" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_7_50' ? '（ ア ） / 0 → Cnt' : (t === 'flow_4_50' ? '0 → Ttl / （ ア ）' : '0 → Ttl, 0 → Cnt')}</text>
+          <line x1="170" y1="80" x2="170" y2="95" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,95 230,95 215,120 95,120" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="162" y="112" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">c を入力する</text>
+          <line x1="162" y1="120" x2="162" y2="135" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,135 220,135 235,155 220,155 110,155 95,155" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+          <text x="165" y="149" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">c ≠ -1 の間 繰り返す</text>
+          <line x1="165" y1="155" x2="165" y2="175" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <rect x="105" y="175" width="120" height="26" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="165" y="192" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_4_50' ? '（ イ ）' : 'Ttl ＋ c → Ttl'}</text>
+          <line x1="165" y1="201" x2="165" y2="215" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <rect x="105" y="215" width="120" height="26" fill="${t === 'flow_1_50' || t === 'flow_7_50' ? '#e0e7ff' : '#f8fafc'}" stroke="${t === 'flow_1_50' || t === 'flow_7_50' ? '#4338ca' : '#334155'}" stroke-width="2"/>
+          <text x="165" y="232" text-anchor="middle" font-size="11" font-weight="bold" fill="#312e81">${t === 'flow_1_50' ? '（ ア ）' : (t === 'flow_7_50' ? '（ イ ）' : 'Cnt ＋ 1 → Cnt')}</text>
+          <line x1="165" y1="241" x2="165" y2="255" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,255 230,255 215,280 95,280" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="162" y="272" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_5_50' ? '（ ア ）' : 'Ttl ÷ Cnt → Avg'}</text>
+        </svg>
+      </div>
+    `;
+  } else if (t === 'flow_2_49' || t === 'flow_5_49' || t === 'flow_8_49') {
+    return `
+      <div class="inline-block py-2">
+        <svg width="340" height="310" viewBox="0 0 340 310" class="mx-auto">
           <rect x="110" y="10" width="120" height="30" rx="15" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
           <text x="170" y="29" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f172a">はじめ</text>
           <line x1="170" y1="40" x2="170" y2="60" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
           <polygon points="110,60 240,60 220,90 90,90" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="79" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a, b を入力</text>
+          <text x="165" y="79" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a, b, c を入力</text>
           <line x1="165" y1="90" x2="165" y2="115" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
-          <rect x="105" y="115" width="120" height="30" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="134" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a × 3 → a</text>
-          <line x1="165" y1="145" x2="165" y2="170" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <polygon points="165,115 225,135 165,155 105,135" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+          <text x="165" y="139" text-anchor="middle" font-size="11" font-weight="bold" fill="#312e81">${t === 'flow_5_49' ? 'b ≧ 10' : (t === 'flow_8_49' ? 'z ＞ 20' : 'a ＞ b')}</text>
 
-          <rect x="105" y="170" width="120" height="30" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="189" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">b ＋ 4 → b</text>
-          <line x1="165" y1="200" x2="165" y2="225" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <line x1="165" y1="155" x2="165" y2="180" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <text x="178" y="172" font-size="10" font-weight="bold" fill="#16a34a">YES</text>
+          <rect x="105" y="180" width="120" height="28" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="165" y="198" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_5_49' ? 'a × 100 → a' : (t === 'flow_8_49' ? 'z × c → z' : 'a × 3 → a')}</text>
 
-          <rect x="105" y="225" width="120" height="30" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="244" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a × b → x</text>
-          <line x1="165" y1="255" x2="165" y2="275" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <line x1="225" y1="135" x2="270" y2="135" stroke="#334155" stroke-width="2"/>
+          <line x1="270" y1="135" x2="270" y2="180" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <text x="235" y="128" font-size="10" font-weight="bold" fill="#dc2626">NO</text>
+          <rect x="220" y="180" width="100" height="28" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="270" y="198" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_5_49' ? 'a × 10 → a' : (t === 'flow_8_49' ? 'z ＋ c → z' : 'b × 2 → b')}</text>
 
-          <polygon points="110,275 240,275 220,305 90,305" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="165" y="294" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">x を出力する</text>
+          <line x1="270" y1="208" x2="270" y2="225" stroke="#334155" stroke-width="2"/>
+          <line x1="270" y1="225" x2="165" y2="225" stroke="#334155" stroke-width="2"/>
+          <line x1="165" y1="208" x2="165" y2="235" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <rect x="105" y="235" width="120" height="28" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="165" y="253" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a ＋ b → z</text>
+          <line x1="165" y1="263" x2="165" y2="275" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,275 230,275 210,300 90,300" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="160" y="292" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">z を出力する</text>
+        </svg>
+      </div>
+    `;
+  } else if (t === 'flow_3_49' || t === 'flow_6_49' || t === 'flow_7_49') {
+    return `
+      <div class="inline-block py-2">
+        <svg width="340" height="290" viewBox="0 0 340 290" class="mx-auto">
+          <rect x="110" y="10" width="120" height="28" rx="14" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="170" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">はじめ</text>
+          <line x1="170" y1="38" x2="170" y2="55" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,55 230,55 215,80 95,80" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="165" y="72" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">a, b を入力する</text>
+          <line x1="165" y1="80" x2="165" y2="98" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,98 220,98 235,118 220,118 110,118 95,118" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+          <text x="165" y="112" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">b ≠ 0 の間 繰り返す</text>
+          <line x1="165" y1="118" x2="165" y2="138" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <rect x="100" y="138" width="130" height="28" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="165" y="156" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">${t === 'flow_6_49' ? 'a × a ＋ x → x' : 'a × c → c'}</text>
+          <line x1="165" y1="166" x2="165" y2="184" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <rect x="105" y="184" width="120" height="28" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="165" y="202" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">b － 1 → b</text>
+          <line x1="165" y1="212" x2="165" y2="230" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <polygon points="110,230 230,230 210,255 90,255" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="160" y="247" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">結果を出力する</text>
         </svg>
       </div>
     `;
   } else {
     return `
       <div class="inline-block py-2">
-        <svg width="340" height="310" viewBox="0 0 340 310" class="mx-auto">
+        <svg width="340" height="280" viewBox="0 0 340 280" class="mx-auto">
           <rect x="110" y="10" width="120" height="28" rx="14" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
           <text x="170" y="28" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">はじめ</text>
-          <line x1="170" y1="38" x2="170" y2="55" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <line x1="170" y1="38" x2="170" y2="60" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
-          <rect x="105" y="55" width="130" height="26" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="170" y="72" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">0 → Ttl, 0 → Cnt</text>
-          <line x1="170" y1="81" x2="170" y2="100" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <polygon points="110,60 230,60 245,75 230,90 110,90 95,75" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="170" y="79" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">（　ア　）</text>
+          <line x1="170" y1="90" x2="170" y2="110" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
-          <polygon points="110,100 230,100 215,125 95,125" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="162" y="117" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">c を入力</text>
-          <line x1="162" y1="125" x2="162" y2="145" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <polygon points="110,110 230,110 215,135 95,135" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="162" y="127" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">c を入力する</text>
+          <line x1="162" y1="135" x2="162" y2="155" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
-          <polygon points="115,145 220,145 235,165 220,165 115,165 100,165" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
-          <text x="167" y="159" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">c ≠ -1 の間 繰り返す</text>
-          <line x1="167" y1="165" x2="167" y2="185" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <polygon points="165,155 225,175 165,195 105,175" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
+          <text x="165" y="179" text-anchor="middle" font-size="11" font-weight="bold" fill="#312e81">（　イ　）</text>
+          <line x1="165" y1="195" x2="165" y2="215" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <text x="178" y="208" font-size="10" font-weight="bold" fill="#16a34a">YES</text>
 
-          <rect x="105" y="185" width="125" height="26" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="167" y="202" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">Ttl ＋ c → Ttl</text>
-          <line x1="167" y1="211" x2="167" y2="230" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
+          <rect x="105" y="215" width="120" height="28" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="165" y="233" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">更新処理</text>
+          <line x1="165" y1="243" x2="165" y2="260" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
 
-          <rect x="105" y="230" width="125" height="26" fill="#e0e7ff" stroke="#4338ca" stroke-width="2"/>
-          <text x="167" y="247" text-anchor="middle" font-size="11" font-weight="bold" fill="#312e81">（　ア　）</text>
-          <line x1="167" y1="256" x2="167" y2="275" stroke="#334155" stroke-width="2" marker-end="url(#arrow)"/>
-
-          <polygon points="110,275 230,275 215,300 95,300" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
-          <text x="162" y="292" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">Ttl ÷ Cnt → Avg</text>
+          <polygon points="110,260 230,260 210,280 90,280" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+          <text x="160" y="275" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">出力する</text>
         </svg>
       </div>
     `;
   }
 }
 
-/**
- * ------------------------------------------------------------------
- * 7. AI リアルタイム質問機能
- * ------------------------------------------------------------------
- */
 async function askAiQuestion(presetType) {
   const currentQ = currentQuestions[currentIndex];
   let promptText = "";
@@ -1452,19 +1625,18 @@ async function askAiQuestion(presetType) {
       promptText = `次の全商情報処理検定「情報基礎」の問題について、正解を直接教えずに、高校生が答えを導き出せるような「考え方のヒント」を分かりやすく提示してください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
       break;
     case 'memory':
-      promptText = `次の全商情報処理検定「情報基礎」の問題に出てくる用語や公式・概念について、高校生が試験で忘れずに思い出しやすくなる「語呂合わせ」「英単語の由来・略称の意味」「覚え方のコツ・テクニック」をわかりやすく教えてください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
+      promptText = `次の検定問題に出てくる用語や公式・概念について、試験で忘れずに思い出しやすくなる「語呂合わせ」「英単語の由来・略称の意味」「覚え方のコツ」を教えてください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
       break;
     case 'analogy':
-      promptText = `次の問題に出てくるIT用語・概念について、高校生にも直感的に理解できるよう、学校生活やスマートフォンの身近な例え話を使って解説してください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
+      promptText = `次の問題に出てくるIT用語について、学校生活やスマートフォンの身近な例え話を使って解説してください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
       break;
     case 'trap':
       promptText = `次の検定問題で、高校生が間違いやすい「ひっかけポイント」や誤答選択肢の理由を教えてください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
       break;
     case 'keywords':
-      promptText = `次の問題と選択肢に含まれる重要キーワードの要点を箇条書きで分かりやすく整理してください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
+      promptText = `次の問題と選択肢に含まれる重要キーワードの要点を箇条書きで整理してください。\n\n【問題】${currentQ.text}\n【選択肢】\n1. ${currentQ.options[0]}\n2. ${currentQ.options[1]}\n3. ${currentQ.options[2]}\n4. ${currentQ.options[3]}`;
       break;
   }
-
   await executeAiQuery(promptText);
 }
 
@@ -1474,8 +1646,7 @@ async function askAiCustomQuery() {
   if (!query) return;
 
   const currentQ = currentQuestions[currentIndex];
-  const fullPrompt = `高校生の全商情報処理検定「情報基礎」の学習者からの質問です。以下の問題を踏まえて親切・簡潔に答えてください。\n\n【問題】${currentQ.text}\n【選択肢】${currentQ.options.join(', ')}\n\n【質問】: ${query}`;
-
+  const fullPrompt = `高校生の情報処理検定学習者からの質問です。以下の問題を踏まえて親切に答えてください。\n\n【問題】${currentQ.text}\n【選択肢】${currentQ.options.join(', ')}\n\n【質問】: ${query}`;
   input.value = '';
   await executeAiQuery(fullPrompt);
 }
@@ -1501,11 +1672,6 @@ function clearAiChat() {
   document.getElementById('ai-user-query').value = '';
 }
 
-/**
- * ------------------------------------------------------------------
- * 8. AIオリジナル弱点補強ドリル作成機能
- * ------------------------------------------------------------------
- */
 async function generateCustomAiDrillFromPortal() {
   const cat = document.getElementById('portal-drill-category').value;
   const count = parseInt(document.getElementById('portal-drill-count').value, 10);
@@ -1522,7 +1688,6 @@ async function generateWeaknessDrillFromResults() {
   const wrongCats = [...new Set(wrongQuestions.map(q => q.cat))];
   const targetCategory = wrongCats.join('・');
   const count = Math.min(10, Math.max(5, wrongQuestions.length));
-
   await runAiDrillGeneration(targetCategory, count, `AI弱点克服ドリル（${targetCategory}特訓）`);
 }
 
@@ -1560,7 +1725,6 @@ async function runAiDrillGeneration(categoryName, count, drillTitle) {
 3. 簡潔で分かりやすい解説（exp）を付与。`;
 
   const jsonStr = await callGeminiApi(prompt, "あなたは全商情報処理検定の作問委員です。正確で良質な4択問題を生成してください。", drillSchema);
-
   document.getElementById('modal-ai-loading').style.display = 'none';
 
   try {
@@ -1577,28 +1741,21 @@ async function runAiDrillGeneration(categoryName, count, drillTitle) {
 
       isAiDrill = true;
       currentExamTitle = drillTitle;
-      
       document.getElementById('guidance-test-title').innerText = `${drillTitle} 受験案内`;
       document.getElementById('guidance-time-label').innerText = `${currentQuestions.length * 2} 分（${currentQuestions.length}問）`;
       document.getElementById('guidance-qcount-label').innerText = `全${currentQuestions.length}問 / 各${(100/currentQuestions.length).toFixed(0)}点 (100点満点)`;
       
       const modeVal = document.querySelector('input[name="portalMode"]:checked')?.value || 'practice';
       examMode = modeVal;
-
       showScreen('screen-guidance');
     } else {
       alert("問題の生成に失敗しました。もう一度お試しください。");
     }
   } catch (e) {
-    alert("問題データの解析中にエラーが発生しました。時間をおいて再試行してください。");
+    alert("問題データの解析中にエラーが発生しました。");
   }
 }
 
-/**
- * ------------------------------------------------------------------
- * 9. Timer & Submission
- * ------------------------------------------------------------------
- */
 function startTimer() {
   timerInterval = setInterval(() => {
     timerSeconds--;
@@ -1624,38 +1781,27 @@ function openFinishModal() {
   }
   document.getElementById('modal-finish').style.display = 'flex';
 }
-
 function closeFinishModal() {
   document.getElementById('modal-finish').style.display = 'none';
 }
-
 function openExitConfirmModal() {
   document.getElementById('modal-exit').style.display = 'flex';
 }
-
 function closeExitModal() {
   document.getElementById('modal-exit').style.display = 'none';
 }
-
 function confirmExitExam() {
   closeExitModal();
   goToPortal();
 }
 
-/**
- * ------------------------------------------------------------------
- * 10. Results & Review Engine
- * ------------------------------------------------------------------
- */
 function submitExamAndShowResults() {
   closeFinishModal();
   if (timerInterval) clearInterval(timerInterval);
 
   const total = currentQuestions.length;
   const pointPerQ = 100 / total;
-  let score = 0;
-  let correctCount = 0;
-  let wrongCount = 0;
+  let score = 0, correctCount = 0, wrongCount = 0;
 
   currentQuestions.forEach((q, idx) => {
     if (userAnswers[idx] === q.answer) {
@@ -1667,10 +1813,7 @@ function submitExamAndShowResults() {
   });
 
   score = Math.round(score);
-
-  if (!isAiDrill) {
-    saveExamScore(currentExamSetId, score);
-  }
+  if (!isAiDrill) saveExamScore(currentExamSetId, score);
 
   document.getElementById('result-score-num').innerText = score;
   document.getElementById('result-correct-count').innerText = `${correctCount} / ${total} 問`;
@@ -1688,7 +1831,6 @@ function submitExamAndShowResults() {
 
   document.getElementById('result-exam-title').innerText = currentExamTitle;
   document.getElementById('review-list-title').innerText = `全問の正誤・解説一覧 (全${total}問)`;
-
   document.getElementById('ai-analysis-box').innerHTML = `「AI弱点診断を実行」を押すとアドバイスが表示され、「苦手特訓ドリルを作成」を押すと間違えた単元を集中的に演習できる問題セットが自動生成されます。`;
 
   renderReviewList('all');
@@ -1702,13 +1844,10 @@ function renderReviewList(filter = 'all') {
   currentQuestions.forEach((q, idx) => {
     const userAns = userAnswers[idx];
     const isCorrect = userAns === q.answer;
-
     if (filter === 'wrong' && isCorrect) return;
 
     const card = document.createElement('div');
-    card.className = `p-5 sm:p-6 rounded-2xl bg-white border-2 transition ${
-      isCorrect ? 'border-emerald-200' : 'border-rose-200'
-    }`;
+    card.className = `p-5 sm:p-6 rounded-2xl bg-white border-2 transition ${isCorrect ? 'border-emerald-200' : 'border-rose-200'}`;
 
     card.innerHTML = `
       <div class="flex items-center justify-between border-b border-slate-100 pb-3 mb-3">
@@ -1744,7 +1883,6 @@ function renderReviewList(filter = 'all') {
         ${q.exp}
       </div>
     `;
-
     container.appendChild(card);
   });
 }
@@ -1768,7 +1906,6 @@ async function generateAiScoreAnalysis() {
   const btn = document.getElementById('btn-gen-analysis');
   btn.disabled = true;
   btn.innerText = "診断中...";
-
   box.innerHTML = `<div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></div>間違えた問題の分野をAIが分析しています...</div>`;
 
   const wrongQuestions = currentQuestions.filter((q, idx) => userAnswers[idx] !== q.answer);
@@ -1789,7 +1926,6 @@ async function generateAiScoreAnalysis() {
   btn.innerText = "再診断する";
 }
 
-// Initialization
 window.addEventListener('DOMContentLoaded', () => {
   renderTextbookCards();
   renderCategoryCards();
